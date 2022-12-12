@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; border: 0; box-sizing: border-box; } 
-html {overflow-y: scroll; overflow-x: hidden;}
-dd, dt {padding: 0; margin: 0;}
+html { overflow-y: scroll; overflow-x: hidden; } 
+dd, dt { padding: 0; margin: 0; display: inline-block; } 
 ul,
 ol,
 li { list-style: none; display: inline-block; } 
