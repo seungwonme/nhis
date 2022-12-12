@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+ul,
+ol,
+li {
+    list-style: none;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    color: inherit;
+    cursor: pointer;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.cf::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+
+/*nhis reset*/
+
+
+
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #6c6d73;
+    font-weight: normal;
+    font-weight: 400;
+    position: relative;
+}
+img {
+    vertical-align: middle;
+}
+input:focus {
+    outline: dotted 1px;
+}
+em {
+    font-style: normal;
+}
+
+
+
+/* layout */
+
+
+
+footer {
+    border-top: 1px solid #b0b0b0;
+}
+.footerTop {
+    border: 1px solid #b0b0b0;
+    border-top: none;
+}
+.footerBottom {
+    border: 1px solid #b0b0b0;
+    border-top: none;
+}

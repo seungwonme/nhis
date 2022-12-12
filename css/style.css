@@ -1,0 +1,108 @@
+@charset "utf-8"; #wrap { width: 100%; } 
+.inner { max-width: 1180px; width: 100%; margin: 0 auto; position: relative; } 
+
+header { width: 100%; height: 120px; padding-bottom: 70px; } 
+header > .servBar > .inner { height: 46px; padding-top: 12px; } 
+header > .servBar .webAcc { font-size: 13px; } 
+header > .servBar .webAcc > span:last-child { margin-left: 20px; } 
+header > .servBar .webAcc em { margin-right: 4px; color: #6c6d73; font-size: 13px; } 
+header > .servBar .webAcc button { width: 20px; height: 20px; text-indent: -9999px; margin-right: 1px; } 
+header > .servBar .webAcc .plusAcc { background: url(../images/btn-increase.png); } 
+header > .servBar .webAcc .minusAcc { background: url(../images/btn-decrease.png); } 
+header > .servBar .webAcc .muteAcc { background: url(../images/btn-sound.png); } 
+header > .servBar .userSet { font-size: 13px; } 
+header > .servBar .userSet li { padding-left: 20px; margin-left: 20px; border-left: 1px solid #ececec; color: #707377; } 
+header > .servBar .userSet li:first-child { border: none; } 
+header > .servBar .userSet li:last-child { color: #d7021b; } 
+header > .servBar .userSet button { background: url(../images/arrow-navy-8x6.png) no-repeat right; padding-right: 15px; } 
+
+header > .gnb {width: 100%; position: relative;}
+header > .gnb > .inner { height: 72px; position: static; display: flex; justify-content: space-between; align-items: baseline;} 
+header > .gnb .logo { width: 142px; height: 72px; text-indent: -9999px; background: url(../images/logo.png) no-repeat center; display: inline-block;} 
+header > .gnb .logo a { display: block; width: 100%; height: 100%; } 
+header > .gnb .gnbInner { padding-top: 20px; z-index: 1; background-color: #fff; left: 650px;} 
+header > .gnb .gnbInner > ul > li { width: 160px; vertical-align: text-top;} 
+header > .gnb .gnbInner > ul > li > a { display: inline-block; font-size: 20px; font-weight: 700; color: #44465c; margin-left: 16px; } 
+header > .gnb .gnbInner > ul > li > a:hover { color: #ee0700; text-decoration: underline; text-underline-position: under; } 
+header > .gnb .gnbInner .gnbMenu {position: absolute;background: #fff; width: 100%; height: 0;}
+header > .gnb .gnbInner > ul ul li { display: none; margin-left: 16px;} 
+header > .gnb .gnbInner > ul:hover ul li { display: block; } 
+header > .gnb .userSupport > button { width: 40px; height: 40px; text-indent: -9999px; } 
+header > .gnb .userSupport > .searchSup { background: url(../images/ico-search-navy.png) no-repeat center; } 
+header > .gnb .userSupport > .fullMenuSup { background: url(../images/ico-menu-navy.png) no-repeat center; margin-left: 11px; } 
+
+main { width: 100%; height: 2360px; padding-top: 50px; } 
+
+main .search > .searchWrap { width: 50%; padding: 20px 0 0; } 
+main .search .formArea { padding-right: 80px; position: relative; margin-bottom: 20px; } 
+main .search .formArea input { width: 100%; height: 60px; line-height: 54px; text-indent: 25px; border: 3px solid #ee0700; border-radius: 10px; font-size: 19px; } 
+main .search .formArea button { width: 60px; height: 60px; position: absolute; top: 0; right: 0; border-radius: 25px; background: url(../images/ico-search.png) no-repeat center #ee0700; text-indent: -9999px; box-shadow: 0 7px 15px 0 #ffa590; cursor: pointer; } 
+
+main .noticeBanner { position: relative; width: 410px; } 
+main .noticeBanner .boxViewport { width: 100%; overflow: hidden; position: relative; height: 118px; } 
+main .noticeBanner .boxViewport > ul { width: 14215%; position: relative; transition-duration: 0s; transform: translate3d(-4920px, 0px, 0px); overflow: hidden; max-height: 118px; } 
+main .noticeBanner .boxViewport li { float: left; position: relative; width: 410px; display: block; } 
+main .noticeBanner .boxControlDirection { position: absolute; bottom: -14px; left: 95px; } 
+main .noticeBanner .boxControlDirection .boxLeft { width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-l.png) no-repeat; margin-right: 41px; } 
+main .noticeBanner .boxControlDirection .boxRight { width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-r.png) no-repeat; } 
+main .noticeBanner .boxControlAuto { position: absolute; bottom: -14px; left: 117px; } 
+main .noticeBanner .boxControlAuto .boxStop { width: 10px; height: 12px; text-indent: -9999px; display: block; background: url(../images/slide-pause.png) no-repeat; } 
+main .noticeBanner > .nthBox { position: absolute; bottom: -20px; left: 0; } 
+main .noticeBanner > .nthBox em { font-weight: 700; color: #3a3a4a; font-size: 16px; font-family: 'NotoKr'; } 
+
+main .visitorMenu { margin-top: 80px; } 
+main .visitorMenu .titleWrap { margin-bottom: 35px; position: relative; } 
+main .visitorMenu .menuTitle { font-size: 21px; color: #3a3a4a; font-weight: 700; margin-right: 18px; } 
+main .visitorMenu .menuToggle:before { width: 50%; height: 32px; position: absolute; top: -1px; left: -1px; background-color: #ee0700; content: ''; border-radius: 20px; } 
+main .visitorMenu .menuToggle { width: 192px; display: inline-block; border: 1px solid #e1e3e6; background-color: #f6f6f6; border-radius: 20px; vertical-align: middle; position: relative; top: -2px; } 
+main .visitorMenu .menuToggle::after { clear: both; content: ''; display: block; } 
+main .visitorMenu .menuToggle > button { width: 50%; height: 30px; line-height: 30px; float: left; background: 0; color: #3a3a4a; position: relative; } 
+main .visitorMenu .moreMenu a { background-color: #fff; border: 1px solid #69727e; color: #44465c; height: 32px; line-height: 32px; padding: 0 12px; border-radius: 4px; display: inline-block; margin: 0; text-align: center; text-decoration: none; vertical-align: top; } 
+main .visitorMenu .moreMenu a:hover { background-color: #f6f6f6; } 
+main .visitorMenu .menuList h2 { text-indent: -9999px; position: fixed; top: -9999px; font-size: 1px; width: 1px; height: 1px; opacity: 0; } 
+main .visitorMenu .menuList ul { width: 100%; height: 100%; position: relative; justify-content: space-around; display: flex; } 
+main .visitorMenu .menuList span { width: 80px; height: 80px; line-height: 80px; display: inline-block; background-color: #f6f6f6; border-radius: 32px; margin-bottom: 23px; position: relative; text-align: center; } 
+.menuList p { text-align: center; line-height: 24px; color: #3a3a4a; font-size: 16px; } 
+main .visitorMenu .menuList .n1th { background: url(../images/ico-qualification.png) no-repeat center #f6f6f6; } 
+main .visitorMenu .menuList .n2th { background: url(../images/ico-burden.png) no-repeat center #f6f6f6; } 
+main .visitorMenu .menuList .n3th { background: url(../images/ico-refund.png) no-repeat center #f6f6f6; } 
+main .visitorMenu .menuList .n4th { background: url(../images/ico-insurance.png) no-repeat center #f6f6f6; } 
+main .visitorMenu .menuList .n5th { background: url(../images/ico-calculation.png) no-repeat center #f6f6f6; } 
+main .visitorMenu .menuList .n6th { background: url(../images/ico-transfer.png) no-repeat center #f6f6f6; } 
+main .visitorMenu .menuList .n7th { background: url(../images/ico-checkups.png) no-repeat center #f6f6f6; } 
+main .visitorMenu .menuList .n8th { background: url(../images/ico-family.png) no-repeat center #f6f6f6; } 
+main .visitorMenu .menuList .n9th { background: url(../images/ico-company-inquiry.png) no-repeat center #f6f6f6; } 
+main .visitorMenu .menuList .n1th:hover { background: #44465c url(../images/ico-qualification-on.png) no-repeat center; } 
+main .visitorMenu .menuList .n2th:hover { background: #44465c url(../images/ico-burden-on.png) no-repeat center; } 
+main .visitorMenu .menuList .n3th:hover { background: #44465c url(../images/ico-refund-on.png) no-repeat center; } 
+main .visitorMenu .menuList .n4th:hover { background: #44465c url(../images/ico-insurance-on.png) no-repeat center; } 
+main .visitorMenu .menuList .n5th:hover { background: #44465c url(../images/ico-calculation-on.png) no-repeat center; } 
+main .visitorMenu .menuList .n6th:hover { background: #44465c url(../images/ico-transfer-on.png) no-repeat center; } 
+main .visitorMenu .menuList .n7th:hover { background: #44465c url(../images/ico-checkups-on.png) no-repeat center; } 
+main .visitorMenu .menuList .n8th:hover { background: #44465c url(../images/ico-family-on.png) no-repeat center; } 
+main .visitorMenu .menuList .n9th:hover { background: #44465c url(../images/ico-company-inquiry-on.png) no-repeat center; } 
+
+.mainBanner { margin-top: 70px; padding-bottom: 80px; } 
+.mainBanner .bannerControl { margin-bottom: 18px; } 
+.mainBanner .boxWrap { width: 100%; height: 128px; background: url(../images/mainBanner.png); border-radius: 8px 55px 8px 8px; } 
+.mainBanner .boxWrap > .boxViewport { overflow: hidden; position: relative; height: 107px; } 
+.mainBanner .boxWrap > .boxViewport ul { position: relative; transition-duration: 0s; transform: translate3d(0px, -106.5px, 0px); } 
+.mainBanner .boxWrap > .boxViewport li { float: none; position: relative; width: 1180px; } 
+.mainBanner .boxWrap > .boxViewport li > a { display: block; text-align: center; padding-top: 28px; } 
+.mainBanner .boxWrap > .boxViewport li p { color: #111; letter-spacing: -1.5px; } 
+.mainBanner .boxWrap > .boxViewport li .slogan { font-size: 21px; margin-bottom: 5px; } 
+.mainBanner .boxWrap > .boxViewport li .title { font-size: 28px; } 
+
+main .background { height: 1619px; background: #f6f6f6; } 
+main .policy { margin-top: 60px; } 
+main .about { margin-top: 60px; } 
+main .customerServ { margin-top: 60px; } 
+
+
+.chatbotIcon > a { background: url(../images/logo_chatbot_home.png); position: fixed; display: block; right: 382px; bottom: 85px; width: 70px; height: 70px; background-size: cover; font-size: 0; text-indent: -9999px; z-index: 1; } 
+@media (min-width: 992px){}
+.chatbotIcon > a { right: 80px; bottom: 85px; width: 70px; height: 70px; background-size: cover; } 
+
+footer { width: 100%; height: 300px; background: #f6f6f6; } 
+footer .footerTop { height: 150px; } 
+footer .footerBottom { height: 150px; } 
