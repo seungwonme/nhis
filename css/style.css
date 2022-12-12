@@ -15,10 +15,42 @@ header > .servBar .webAcc .plusAcc { background: url(../images/btn-increase.png)
 header > .servBar .webAcc .minusAcc { background: url(../images/btn-decrease.png); } 
 header > .servBar .webAcc .muteAcc { background: url(../images/btn-sound.png); } 
 header > .servBar .userSet { font-size: 13px; } 
-header > .servBar .userSet li { padding-left: 20px; margin-left: 20px; border-left: 1px solid #ececec; color: #707377; } 
-header > .servBar .userSet li:first-child { border: none; } 
-header > .servBar .userSet li:last-child { color: #d7021b; } 
-header > .servBar .userSet button { background: url(../images/arrow-navy-8x6.png) no-repeat right; padding-right: 15px; } 
+header > .servBar .userSet > ul > li { padding-left: 20px; margin-left: 20px; border-left: 1px solid #e1e1e1; color: #707377; } 
+header > .servBar .userSet > ul > li:first-child { border: none; } 
+header > .servBar .userSet > ul > li:last-child { color: #d7021b; } 
+
+/* Top userSet toggle */
+
+header > .servBar .userSet input { display: none; } 
+header > .servBar .userSet label { cursor: pointer; display: inline-block; } 
+header > .servBar .userSet label::after { content: "▼"; font-size: 0.8em; margin-left: 3px; } 
+header > .servBar .userSet #languageToggle:checked ~ .languageMenu { display: block; } 
+header > .servBar .userSet #languageToggle:checked ~ label::after { content: "▲"; font-size: 0.8em; margin-left: 3px; } 
+header > .servBar .userSet .languageMenu { display: none; } 
+header > .servBar .userSet .languageMenu { top: 35px; right: 0; min-width: 130px; z-index: 2; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; } 
+header > .servBar .userSet .languageMenu li { display: block; line-height: 33px; letter-spacing: -0.025em; color: #44465c; font-size: 15px; } 
+header > .servBar .userSet .languageMenu li:hover > a { color: #d7021b; text-decoration: underline; } 
+
+header > .servBar .userSet #siteToggle:checked ~ .siteMenu { display: block; } 
+header > .servBar .userSet #siteToggle:checked ~ label::after { content: "▲"; font-size: 0.8em; margin-left: 3px; } 
+header > .servBar .userSet .siteMenu { display: none; position: absolute; top: 35px; right: 0; min-width: 130px; z-index: 2; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; color: #44465c; width: 361px; height: 260px; padding: 19px;} 
+header > .servBar .userSet .siteMenu li {width: 107px; height: 120px;}
+header > .servBar .userSet .siteMenu a {width: 107px; height: 110px; padding-top: 10px;}
+header > .servBar .userSet .siteMenu p {text-align: center; font-size: 15px;}
+
+header > .servBar .userSet .siteMenu .n1thSite { background: url(../images/site-list-ico01.png) no-repeat 50% 50% #f16669; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
+header > .servBar .userSet .siteMenu .n2thSite { background: url(../images/site-list-ico02.png) no-repeat 50% 50% #bf9d83; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
+header > .servBar .userSet .siteMenu .n3thSite { background: url(../images/site-list-ico03.png) no-repeat 50% 50% #4cc771; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
+header > .servBar .userSet .siteMenu .n4thSite { background: url(../images/site-list-ico04.png) no-repeat 50% 50% #658dd0; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
+header > .servBar .userSet .siteMenu .n5thSite { background: url(../images/site-list-ico05.png) no-repeat 50% 50% #58606b; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
+header > .servBar .userSet .siteMenu .n6thSite { background: url(../images/site-list-ico06.png) no-repeat 50% 50% #9385dd; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
+header > .servBar .userSet .siteMenu
+header > .servBar .userSet .siteMenu
+
+/* 
+~ Top userSet toggle
+GNB 
+*/
 
 header > .gnb > .inner { position: static; } 
 header > .gnb nav { justify-content: space-between; } 
@@ -48,8 +80,9 @@ header > .gnb nav:hover > .gnbMenu > .favoriteMenu dt { font-weight: 700; color:
 header > .gnb nav:hover > .gnbMenu > .favoriteMenu dl { width: 800px; margin: auto; } 
 header > .gnb nav:hover > .gnbMenu > .favoriteMenu a { margin-left: 32px; } 
 
-main { width: 100%; height: 2360px; padding-top: 50px; } 
+/* ~ GNB */
 
+main { width: 100%; height: 2360px; padding-top: 50px; } 
 main .search > .searchWrap { width: 50%; padding: 20px 1px 0; } 
 main .search .formArea { padding-right: 80px; position: relative; margin-bottom: 20px; } 
 main .search .formArea input { width: 100%; height: 60px; line-height: 54px; text-indent: 25px; border: 3px solid #ee0700; border-radius: 10px; font-size: 19px; } 
