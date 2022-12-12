@@ -5,7 +5,9 @@
 #wrap::before { background: url(../images/bg_layout_l.png); top: 0; left: 0; height: 400px; position: absolute; content: ""; width: 170px; } 
 #wrap::after { background: url(../images/bg_layout_r.png); top: 0; right: 0; height: 400px; position: absolute; content: ""; width: 170px; } 
 
-@media(max-width:1530px) {#wrap::before{background: none; z-index: -1;} #wrap::after{background: none; z-index: -1;}}
+@media(max-width:1530px){
+ #wrap::before { background: none; z-index: -1; } #wrap::after { background: none; z-index: -1; } 
+ }
 
 header { width: 100%; height: 120px; padding-bottom: 70px; } 
 header > .servBar > .inner { height: 46px; padding-top: 12px; } 
@@ -35,10 +37,10 @@ header > .servBar .userSet .languageMenu li:hover > a { color: #d7021b; text-dec
 
 header > .servBar .userSet #siteToggle:checked ~ .siteMenu { display: block; } 
 header > .servBar .userSet #siteToggle:checked ~ label::after { content: "▲"; font-size: 0.8em; margin-left: 3px; } 
-header > .servBar .userSet .siteMenu { display: none; position: absolute; top: 35px; right: 0; min-width: 130px; z-index: 2; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; color: #44465c; width: 361px; height: 260px; padding: 19px;} 
-header > .servBar .userSet .siteMenu li {width: 107px; height: 120px;}
-header > .servBar .userSet .siteMenu a {width: 107px; height: 110px; padding-top: 10px;}
-header > .servBar .userSet .siteMenu p {text-align: center; font-size: 15px;}
+header > .servBar .userSet .siteMenu { display: none; position: absolute; top: 35px; right: 0; min-width: 130px; z-index: 2; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; color: #44465c; width: 361px; height: 260px; padding: 19px; } 
+header > .servBar .userSet .siteMenu li { width: 107px; height: 120px; } 
+header > .servBar .userSet .siteMenu a { width: 107px; height: 110px; padding-top: 10px; } 
+header > .servBar .userSet .siteMenu p { text-align: center; font-size: 15px; } 
 
 header > .servBar .userSet .siteMenu .n1thSite { background: url(../images/site-list-ico01.png) no-repeat 50% 50% #f16669; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
 header > .servBar .userSet .siteMenu .n2thSite { background: url(../images/site-list-ico02.png) no-repeat 50% 50% #bf9d83; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
@@ -46,8 +48,6 @@ header > .servBar .userSet .siteMenu .n3thSite { background: url(../images/site-
 header > .servBar .userSet .siteMenu .n4thSite { background: url(../images/site-list-ico04.png) no-repeat 50% 50% #658dd0; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
 header > .servBar .userSet .siteMenu .n5thSite { background: url(../images/site-list-ico05.png) no-repeat 50% 50% #58606b; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
 header > .servBar .userSet .siteMenu .n6thSite { background: url(../images/site-list-ico06.png) no-repeat 50% 50% #9385dd; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
-header > .servBar .userSet .siteMenu
-header > .servBar .userSet .siteMenu
 
 /* 
 ~ Top userSet toggle
@@ -145,16 +145,64 @@ main .visitorMenu .menuList .n9th:hover { background: #44465c url(../images/ico-
 .mainBanner .boxWrap > .boxViewport li .slogan { font-size: 21px; margin-bottom: 5px; } 
 .mainBanner .boxWrap > .boxViewport li .title { font-size: 28px; } 
 
-main .background { height: 1619px; background: #f6f6f6; } 
-main .policy { margin-top: 60px; } 
-main .about { margin-top: 60px; } 
-main .customerServ { margin-top: 60px; } 
+main > .background { height: 1623px; background: #f6f6f6; padding: 80px 0 85px; } 
+main > .background > .newsWrap { width: 1180px; height: 320px; margin: 0 auto; justify-content: space-between; } 
+main > .background > .newsWrap > div { width: 30%; height: 320px; } 
+main .newsArea { border-radius: 50px 20px 20px 20px; background-color: #ef6266; padding-top: 25px; } 
+main .headthInfo { border: 1px solid #e1e3e6; background-color: #fff; border-radius: 20px 60px 20px 20px; padding: 35px 39px 0; } 
+main .quickLink { background: #2fa298 url(../images/bg-guarantee.png) no-repeat right bottom; border-radius: 20px 20px 60px 20px; padding-top: 25px; } 
+
+main .policyWrap { margin: 62px auto 0; max-width: 1180px; width: 100%; height: 320px; justify-content: space-between; } 
+main .mainPolicy { width: 65%; height: 320px; background: url(../images/bg-notice.png) no-repeat; background-size: 100% 100%; padding: 30px 50px 0; } 
+main .eventBanner { width: 30%; background-color: #fff; border: 1px solid #e1e3e6; padding: 33px 39px 0; border-radius: 20px 20px 55px 20px; position: relative; } 
+main .aboutWrap { margin: 62px auto 0; max-width: 1180px; width: 100%; height: 370px; justify-content: space-between; } 
+main .arlamService { width: 30%; height: 370px; padding: 33px 39px 0; background-color: #fff; border-radius: 20px 20px 20px 55px; border: 1px solid #e1e3e6; position: relative; } 
+main .divWrap { width: 30%; height: 370px; } 
+main .organization { width: 100%; height: 170px; border: 1px solid #e1e3e6; padding: 33px 39px 0; background: #fff url(../images/bg-organization.png) no-repeat right top; border-radius: 20px 55px 20px 20px; margin-bottom: 30px; } 
+main .findBranch { width: 100%; background: #fff url(../images/bg-center.png) no-repeat right bottom; border-radius: 55px 20px 20px 20px; height: 170px; border: 1px solid #e1e3e6; padding: 33px 39px 0; } 
+main .promotionZone { width: 30%; height: 370px; background-color: #fff; border: 1px solid #e1e3e6; padding: 33px 39px 0; border-radius: 20px 20px 55px 20px; position: relative; } 
+
+main .serviceWrap { max-width: 1180px; width: 100%; height: 261px; margin: 62px auto 0; } 
+main .customerService { width: 1180px; height: 261px; background: #fff url(../images/bg-news-hiwell.png)no-repeat right top; border: 1px solid #e1e3e6; border-radius: 20px; overflow: hidden; padding: 39px; } 
+
 
 
 .chatbotIcon > a { background: url(../images/logo_chatbot_home.png); position: fixed; display: block; right: 382px; bottom: 85px; width: 70px; height: 70px; background-size: cover; font-size: 0; text-indent: -9999px; z-index: 1; } 
-@media (min-width: 992px) { } 
+/* @media (min-width: 992px) { } */
 .chatbotIcon > a { right: 80px; bottom: 85px; width: 70px; height: 70px; background-size: cover; } 
 
-footer { width: 100%; height: 300px; background: #f6f6f6; } 
-footer .footerTop { height: 150px; } 
-footer .footerBottom { height: 150px; } 
+
+
+footer { width: 100%; height: 254px; padding: 40px 0 77px; background-color: #f6f6f6; border-top: 1px solid #e1e1e1; margin-top: 55px; } 
+footer .footerTop { height: 40px; } 
+footer .footerTop > .terms { line-height:40px; } 
+footer .footerTop > .terms li { margin-left: 20px; } 
+footer .footerTop > .terms li:first-child { margin:0; } 
+footer .footerTop > .terms li:nth-child(3) { color: #d7021b; } 
+footer .footerTop > .relatedSites > div { display: inline-block; } 
+footer .footerTop > .relatedSites input { display: none; } 
+footer .footerTop > .relatedSites label { display: inline-block; background: #fff; width: 198px; height: 40px; padding: 0 30px 0 20px; line-height: 40px; color: #000; cursor: pointer; position: relative; } 
+.relatedSites li { display: block; } 
+
+footer .footerTop > .relatedSites .internalRelated label::after { content: "▼"; font-size: 0.8em; margin-left: 3px; } 
+footer .footerTop > .relatedSites .internalRelated input:checked ~ label::after { content: "▲"; font-size: 0.8em; margin-left: 3px; } 
+footer .footerTop > .relatedSites .internalRelated input:checked ~ .internalRelatedToggle { display: block; width: 241px; height: 330px; padding: 15px 20px; bottom: 150px; } 
+.internalRelatedToggle { display: none; width: 243px; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; } 
+.internalRelatedToggle ul { width: 100%; height: 100%; } 
+.internalRelatedToggle ul li a { padding: 4px 0; display: block; } 
+.internalRelatedToggle ul li a:hover { color: #d7021b; text-decoration: underline; } 
+
+footer .footerTop > .relatedSites .related { margin-left: 10px; } 
+footer .footerTop > .relatedSites .related label::after { content: "▼"; font-size: 0.8em; margin-left: 3px; } 
+footer .footerTop > .relatedSites .related input:checked ~ label::after { content: "▲"; font-size: 0.8em; margin-left: 3px; } 
+footer .footerTop > .relatedSites .related input:checked ~ .relatedToggle { display: block; width: 241px; height: 362px; padding: 15px 20px; bottom: 150px; } 
+.relatedToggle { width: 241px; padding: 15px 20px; display: none; overflow-y: scroll; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; } 
+.relatedToggle ul { width: 100%; height: 100%; } 
+.relatedToggle ul li a { padding: 4px 0; display: block; } 
+.relatedToggle ul li a:hover { color: #d7021b; text-decoration: underline; } 
+
+footer .footerTop > .relatedSites > div > a { display: inline-block; width: 46px; height: 40px; background: #fff; line-height: 40px; text-align: center; } 
+
+
+footer .footerBottom { height: 67px; padding-top:15px; margin-top: 30px; } 
+

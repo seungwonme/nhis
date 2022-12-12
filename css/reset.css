@@ -14,7 +14,6 @@ button { color: inherit; cursor: pointer; }
 .pa { position: absolute; } 
 
 
-
 /*nhis reset*/
 
 
@@ -23,13 +22,3 @@ body { font-size: 15px; line-height: 1.5; color: #6c6d73; font-weight: normal; f
 img { vertical-align: middle; } 
 input:focus { outline: dotted 1px; } 
 em { font-style: normal; } 
-
-
-
-/* layout */
-
-
-
-footer { border-top: 1px solid #b0b0b0; } 
-.footerTop { border: 1px solid #b0b0b0; border-top: none; } 
-.footerBottom { border: 1px solid #b0b0b0; border-top: none; } 
