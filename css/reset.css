@@ -12,6 +12,7 @@ button { color: inherit; cursor: pointer; }
 .df { display: flex; } 
 .pr { position: relative; } 
 .pa { position: absolute; } 
+.ps { position: static;}
 
 
 /*nhis reset*/
