@@ -148,9 +148,36 @@ main .visitorMenu .menuList .n9th:hover { background: #44465c url(../images/ico-
 main > .background { height: 1623px; background: #f6f6f6; padding: 80px 0 85px; } 
 main > .background > .newsWrap { width: 1180px; height: 320px; margin: 0 auto; justify-content: space-between; } 
 main > .background > .newsWrap > div { width: 30%; height: 320px; } 
-main .newsArea { border-radius: 50px 20px 20px 20px; background-color: #ef6266; padding-top: 25px; } 
+main .newsWrap ul { display: block; } 
+main .newsWrap li { display: block; } 
+main .newsWrap a { display: block; } 
+main .newsWrap .newsArea { border-radius: 50px 20px 20px 20px; background-color: #ef6266; padding-top: 25px; } 
+
+main .newsWrap > .newsArea li { height: 53px; border-bottom: 1px solid #f18f91; } 
+main .newsWrap > .newsArea li:last-child { border: none; } 
+main .newsWrap > .newsArea li a { display: block; margin-right: 40px; padding-left: 40px; height: 52px; line-height: 52px; color: #fff; font-weight: 700; font-size: 19px; } 
+main .newsWrap > .newsArea li:first-child a { background: url(../images/icon_news_area_01.png) no-repeat right 12px } 
+main .newsWrap > .newsArea li:nth-child(2) a { background: url(../images/icon_news_area_02.png) no-repeat right 8px } 
+main .newsWrap > .newsArea li:nth-child(3) a { background: url(../images/icon_news_area_03.png) no-repeat right 10px } 
+main .newsWrap > .newsArea li:nth-child(4) a { background: url(../images/icon_news_area_04.png) no-repeat right 10px } 
+main .newsWrap > .newsArea li:nth-child(5) a { background: url(../images/icon_news_area_05.png) no-repeat right 10px } 
 main .headthInfo { border: 1px solid #e1e3e6; background-color: #fff; border-radius: 20px 60px 20px 20px; padding: 35px 39px 0; } 
+main .newsWrap .headthInfo > p { font-size: 21px; color: #3a3a4a; font-weight: 700; padding-bottom: 23px; border-bottom: 1px solid #f0edec; } 
+main .newsWrap .headthInfo li { border-bottom: 1px solid #f0edec; } 
+main .newsWrap .headthInfo li a { height: 45px; line-height: 45px; color: #3a3a4a; } 
+main .newsWrap .headthInfo li:nth-child(1) a { background: url(../images/icon-health-info-1.png) no-repeat 240px; } 
+main .newsWrap .headthInfo li:nth-child(2) a { background: url(../images/icon-health-info-2.png) no-repeat 240px; } 
+main .newsWrap .headthInfo li:nth-child(3) a { background: url(../images/icon-health-info-4.png) no-repeat 240px; } 
+main .newsWrap .headthInfo li:nth-child(4) a { background: url(../images/icon-health-info-3.png) no-repeat 240px; } 
+main .newsWrap .headthInfo li img { margin-left: 9px; } 
 main .quickLink { background: #2fa298 url(../images/bg-guarantee.png) no-repeat right bottom; border-radius: 20px 20px 60px 20px; padding-top: 25px; } 
+main .newsWrap .quickLink li { border-bottom: 1px solid #82c7c1; height: 53px; } 
+main .newsWrap .quickLink li:last-child { border-bottom: none; } 
+main .newsWrap .quickLink a { height: 52px; line-height: 52px; color: #fff; padding-left: 40px; font-size: 19px; font-weight: 700; margin-right: 40px; } 
+main .newsWrap .quickLink a > p { font-size: 15px; color: #fff; line-height: 24px; font-weight: 400; } 
+
+
+
 
 main .policyWrap { margin: 62px auto 0; max-width: 1180px; width: 100%; height: 320px; justify-content: space-between; } 
 main .mainPolicy { width: 65%; height: 320px; background: url(../images/bg-notice.png) no-repeat; background-size: 100% 100%; padding: 30px 50px 0; } 
@@ -184,8 +211,8 @@ footer .footerTop > .relatedSites input { display: none; }
 footer .footerTop > .relatedSites label { display: inline-block; background: #fff; width: 198px; height: 40px; padding: 0 30px 0 20px; line-height: 40px; color: #000; cursor: pointer; position: relative; } 
 .relatedSites li { display: block; } 
 
-footer .footerTop > .relatedSites .internalRelated label::after { content: "▼"; font-size: 0.8em; position: absolute; right: 20px;} 
-footer .footerTop > .relatedSites .internalRelated input:checked ~ label::after { content: "▲";} 
+footer .footerTop > .relatedSites .internalRelated label::after { content: "▼"; font-size: 0.8em; position: absolute; right: 20px; } 
+footer .footerTop > .relatedSites .internalRelated input:checked ~ label::after { content: "▲"; } 
 footer .footerTop > .relatedSites .internalRelated input:checked ~ .internalRelatedToggle { display: block; width: 241px; height: 330px; padding: 15px 20px; bottom: 150px; } 
 .internalRelatedToggle { display: none; width: 243px; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; } 
 .internalRelatedToggle ul { width: 100%; height: 100%; } 
@@ -193,8 +220,8 @@ footer .footerTop > .relatedSites .internalRelated input:checked ~ .internalRela
 .internalRelatedToggle ul li a:hover { color: #d7021b; text-decoration: underline; } 
 
 footer .footerTop > .relatedSites .related { margin-left: 10px; } 
-footer .footerTop > .relatedSites .related label::after {position: absolute; right: 20px; content: "▼"; font-size: 0.8em;} 
-footer .footerTop > .relatedSites .related input:checked ~ label::after { content: "▲";} 
+footer .footerTop > .relatedSites .related label::after { position: absolute; right: 20px; content: "▼"; font-size: 0.8em; } 
+footer .footerTop > .relatedSites .related input:checked ~ label::after { content: "▲"; } 
 footer .footerTop > .relatedSites .related input:checked ~ .relatedToggle { display: block; width: 241px; height: 362px; padding: 15px 20px; bottom: 150px; } 
 .relatedToggle { width: 241px; padding: 15px 20px; display: none; overflow-y: scroll; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; } 
 .relatedToggle ul { width: 100%; height: 100%; } 
