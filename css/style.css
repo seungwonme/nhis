@@ -175,12 +175,20 @@ main .newsWrap .quickLink li { border-bottom: 1px solid #82c7c1; height: 53px; }
 main .newsWrap .quickLink li:last-child { border-bottom: none; } 
 main .newsWrap .quickLink a { height: 52px; line-height: 52px; color: #fff; padding-left: 40px; font-size: 19px; font-weight: 700; margin-right: 40px; } 
 main .newsWrap .quickLink a > p { font-size: 15px; color: #fff; line-height: 24px; font-weight: 400; } 
-
-
-
-
 main .policyWrap { margin: 62px auto 0; max-width: 1180px; width: 100%; height: 320px; justify-content: space-between; } 
 main .mainPolicy { width: 65%; height: 320px; background: url(../images/bg-notice.png) no-repeat; background-size: 100% 100%; padding: 30px 50px 0; } 
+main .mainPolicy dl { width: 100%; text-align: center; } 
+main .mainPolicy dt { font-size: 19px; color: #3a3a4a; font-weight: 700; line-height: 35px; padding-left: 59px; background: url(../images/ico-notice.png) no-repeat left center; text-align: left; } 
+main .mainPolicy dt strong { display: block; font-size: 28px; } 
+main .mainPolicy dd { display: block; border-top: 1px solid #f7cc01; padding-top: 25px; margin-top: 20px; } 
+main .mainPolicy dd > a { display: block; height: 32px; font-size: 16px; color: #3a3a4a; letter-spacing: -1px; margin-top: 7px; position: relative; } 
+main .mainPolicy dd > a > p { display: inline-block; } 
+main .mainPolicy dd > a:hover > p { font-size: 24px; color: #3a3a4a; font-weight: 700; background: url(../images/bg-dummy.png) repeat-x left 10px; padding: 0 5px 0 10px; transition: all .6s; } 
+main .mainPolicy dd > a:hover > .speechBubble { display: block; } 
+.speechBubble { display: none; width: 234px; height: 74px; position: absolute; transform: translate(-50%,0); background-color: #44465c; border-radius: 15px; color: #fff; padding: 19px 10px 0; text-align: center; box-shadow: 2px 5px 14px 0 #777; top: -85px; left: 50%; } 
+.speechBubble::after { width: 16px; height: 8px; background: url(../images/edge-balloon.png) no-repeat center bottom; content: ""; position: absolute; bottom: -7px; left: 110px; } 
+.speechBubble span { color: #ffea00; } 
+
 main .eventBanner { width: 30%; background-color: #fff; border: 1px solid #e1e3e6; padding: 33px 39px 0; border-radius: 20px 20px 55px 20px; position: relative; } 
 main .aboutWrap { margin: 62px auto 0; max-width: 1180px; width: 100%; height: 370px; justify-content: space-between; } 
 main .arlamService { width: 30%; height: 370px; padding: 33px 39px 0; background-color: #fff; border-radius: 20px 20px 20px 55px; border: 1px solid #e1e3e6; position: relative; } 
