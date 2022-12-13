@@ -111,7 +111,7 @@ main .visitorMenu .menuToggle > button { width: 50%; height: 30px; line-height: 
 main .visitorMenu .moreMenu a { background-color: #fff; border: 1px solid #69727e; color: #44465c; height: 32px; line-height: 32px; padding: 0 12px; border-radius: 4px; display: inline-block; margin: 0; text-align: center; text-decoration: none; vertical-align: top; } 
 main .visitorMenu .moreMenu a:hover { background-color: #f6f6f6; } 
 main .visitorMenu .menuList h2 { text-indent: -9999px; position: fixed; top: -9999px; font-size: 1px; width: 1px; height: 1px; opacity: 0; } 
-main .visitorMenu .menuList ul { width: 100%; height: 100%; justify-content: space-around; display: flex; } 
+main .visitorMenu .menuList ul { width: 100%; height: 100%; justify-content: space-around; } 
 main .visitorMenu .menuList span { width: 80px; height: 80px; line-height: 80px; display: inline-block; background-color: #f6f6f6; border-radius: 32px; margin-bottom: 23px; position: relative; text-align: center; } 
 .menuList p { text-align: center; line-height: 24px; color: #3a3a4a; font-size: 16px; } 
 main .visitorMenu .menuList .n1th { background: url(../images/ico-qualification.png) no-repeat center #f6f6f6; } 
@@ -151,7 +151,6 @@ main .newsWrap ul { display: block; }
 main .newsWrap li { display: block; } 
 main .newsWrap a { display: block; } 
 main .newsWrap .newsArea { border-radius: 50px 20px 20px 20px; background-color: #ef6266; padding-top: 25px; } 
-
 main .newsWrap > .newsArea li { height: 53px; border-bottom: 1px solid #f18f91; } 
 main .newsWrap > .newsArea li:last-child { border: none; } 
 main .newsWrap > .newsArea li a { display: block; margin-right: 40px; padding-left: 40px; height: 52px; line-height: 52px; color: #fff; font-weight: 700; font-size: 19px; } 
@@ -187,7 +186,6 @@ main .mainPolicy dd > a:hover > .speechBubble { display: block; }
 .speechBubble { display: none; width: 234px; height: 74px; position: absolute; transform: translate(-50%,0); background-color: #44465c; border-radius: 15px; color: #fff; padding: 19px 10px 0; text-align: center; box-shadow: 2px 5px 14px 0 #777; top: -85px; left: 50%; } 
 .speechBubble::after { width: 16px; height: 8px; background: url(../images/edge-balloon.png) no-repeat center bottom; content: ""; position: absolute; bottom: -7px; left: 110px; } 
 .speechBubble span { color: #ffea00; } 
-
 main .eventBanner { width: 30%; background-color: #fff; border: 1px solid #e1e3e6; padding: 33px 39px 0; border-radius: 20px 20px 55px 20px; } 
 main .eventBanner > p { font-size: 21px; color: #3a3a4a; margin-bottom: 19px; font-weight: 700; } 
 main .eventBanner > .nthBox { top: 37px; right: 42px; padding-right: 82px; } 
@@ -197,11 +195,36 @@ main .eventBanner .boxControlDirection { top: 42px; right: 49px; }
 main .eventBanner .boxLeft { display: inline-block; width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-l.png) no-repeat; margin-right: 41px; } 
 main .eventBanner .boxRight { display: inline-block; width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-r.png) no-repeat; } 
 main .eventBanner .boxControlAuto { width: 10px; height: 12px; text-indent: -9999px; display: block; background: url(../images/slide-pause.png) no-repeat; top: 42px; right: 73px; } 
-
-
 main .aboutWrap { margin: 62px auto 0; max-width: 1180px; width: 100%; height: 370px; justify-content: space-between; } 
-main .arlamService { width: 30%; height: 370px; padding: 33px 39px 0; background-color: #fff; border-radius: 20px 20px 20px 55px; border: 1px solid #e1e3e6; } 
+
+main .alarmService { width: 30%; height: 370px; padding: 33px 39px 0; background-color: #fff; border-radius: 20px 20px 20px 55px; border: 1px solid #e1e3e6; } 
+main .alarmService .title { display: block; font-size: 21px; color: #3a3a4a; margin-bottom: 19px; font-weight: 700; } 
+main .alarmService .date { line-height: 24px; margin-bottom: 17px; } 
+main .alarmService .date img { margin:0 0 4px 3px; width: 7px; } 
+main .alarmService .graph { height: 180px; padding-top: 140px; position: relative; } 
+main .alarmService .graph ul { width: 100%; } 
+main .alarmService .graph ul li { width:20%; } 
+main .alarmService .graph input { display: none; } 
+main .alarmService .graph input:checked + label { background: #44465c; color: #fff; border: #44465c; } 
+main .alarmService .graph label { width: 100%; height: 40px; line-height: 38px; text-align: center; background-color: #fff; border: 1px solid #ccc; font-size: 13px; color: #44465c; display: block; border-left: 0; cursor: pointer; } 
+main .alarmService .graph label:hover { background: #44465c; color: #fff; border: #44465c; } 
+main .alarmService .graph li:first-child label { border-left: 1px solid #ccc; border-radius: 5px 0 0 5px; } 
+main .alarmService .graph li:last-child label { border-right: 1px solid #ccc; border-radius: 0 5px 5px 0; } 
+main .alarmService .graph li div { display: none; width: 201px; height: 100px; position: absolute; top: 0; left: 13%; text-align: center; padding-top: 70px; color: #057eb6; font-weight: 700; } 
+main .alarmService .graph input:checked ~ div { display: block; } 
+main .alarmService .graph li:nth-child(1) div { background: url(../images/bg-health-noti-3.png); } 
+main .alarmService .graph li:nth-child(2) div { background: url(../images/bg-health-noti-2.png); } 
+main .alarmService .graph li:nth-child(3) div { background: url(../images/bg-health-noti-1.png); } 
+main .alarmService .graph li:nth-child(4) div { background: url(../images/bg-health-noti-4.png); } 
+main .alarmService .graph li:nth-child(5) div { background: url(../images/bg-health-noti-3.png); } 
+
 main .divWrap { width: 30%; height: 370px; } 
+main .divWrap .title { display: block; font-size: 21px; color: #3a3a4a; margin-bottom: 19px; font-weight: 700; } 
+
+
+
+
+
 main .organization { width: 100%; height: 170px; border: 1px solid #e1e3e6; padding: 33px 39px 0; background: #fff url(../images/bg-organization.png) no-repeat right top; border-radius: 20px 55px 20px 20px; margin-bottom: 30px; } 
 main .findBranch { width: 100%; background: #fff url(../images/bg-center.png) no-repeat right bottom; border-radius: 55px 20px 20px 20px; height: 170px; border: 1px solid #e1e3e6; padding: 33px 39px 0; } 
 main .promotionZone { width: 30%; height: 370px; background-color: #fff; border: 1px solid #e1e3e6; padding: 33px 39px 0; border-radius: 20px 20px 55px 20px; } 
@@ -209,13 +232,11 @@ main .promotionZone { width: 30%; height: 370px; background-color: #fff; border:
 main .serviceWrap { max-width: 1180px; width: 100%; height: 261px; margin: 62px auto 0; } 
 main .customerService { width: 1180px; height: 261px; background: #fff url(../images/bg-news-hiwell.png)no-repeat right top; border: 1px solid #e1e3e6; border-radius: 20px; overflow: hidden; padding: 39px; } 
 
-
-
+/* chatbot */
 .chatbotIcon > a { background: url(../images/logo_chatbot_home.png); position: fixed; display: block; right: 382px; bottom: 85px; width: 70px; height: 70px; background-size: cover; font-size: 0; text-indent: -9999px; z-index: 1; } 
 /* @media (min-width: 992px) { } */
 .chatbotIcon > a { right: 80px; bottom: 85px; width: 70px; height: 70px; background-size: cover; } 
-
-
+/* ~chatbot */
 
 footer { width: 100%; height: 254px; padding: 40px 0 77px; background-color: #f6f6f6; border-top: 1px solid #e1e1e1; margin-top: 55px; } 
 footer .footerTop { height: 40px; } 
