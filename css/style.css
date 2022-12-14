@@ -96,8 +96,8 @@ main .noticeBanner .boxViewport li { float: left; width: 410px; display: block; 
 main .noticeBanner .boxControlDirection { bottom: -14px; left: 95px; } 
 main .noticeBanner .boxControlDirection .boxLeft { width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-l.png) no-repeat; margin-right: 41px; } 
 main .noticeBanner .boxControlDirection .boxRight { width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-r.png) no-repeat; } 
-main .noticeBanner .boxControlAuto { bottom: -14px; left: 117px; } 
-main .noticeBanner .boxControlAuto .boxStop { width: 10px; height: 12px; text-indent: -9999px; display: block; background: url(../images/slide-pause.png) no-repeat; } 
+main .noticeBanner .boxControlAuto { bottom: -14px; left: 117px; }
+main .boxControlAuto .boxStop { width: 10px; height: 12px; text-indent: -9999px; display: block; background: url(../images/slide-pause.png) no-repeat; }  
 main .noticeBanner > .nthBox { bottom: -20px; left: 0; } 
 main .noticeBanner > .nthBox em { font-weight: 700; color: #3a3a4a; font-size: 16px; font-family: 'NotoKr'; } 
 
@@ -190,11 +190,11 @@ main .eventBanner { width: 30%; background-color: #fff; border: 1px solid #e1e3e
 main .eventBanner > p { font-size: 21px; color: #3a3a4a; margin-bottom: 19px; font-weight: 700; } 
 main .eventBanner > .nthBox { top: 37px; right: 42px; padding-right: 82px; } 
 main .eventBanner > .nthBox em { font-weight: 700; color: #3a3a4a; font-size: 16px; } 
-main .eventBanner .boxViewport { overflow: hidden; height: 190px; } 
+main .eventBanner .boxViewport {height: 190px; } 
 main .eventBanner .boxControlDirection { top: 42px; right: 49px; } 
 main .eventBanner .boxLeft { display: inline-block; width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-l.png) no-repeat; margin-right: 41px; } 
 main .eventBanner .boxRight { display: inline-block; width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-r.png) no-repeat; } 
-main .eventBanner .boxControlAuto { width: 10px; height: 12px; text-indent: -9999px; display: block; background: url(../images/slide-pause.png) no-repeat; top: 42px; right: 73px; } 
+main .eventBanner .boxControlAuto {top: 42px; right: 73px;}
 main .aboutWrap { margin: 62px auto 0; max-width: 1180px; width: 100%; height: 370px; justify-content: space-between; } 
 
 main .alarmService { width: 30%; height: 370px; padding: 33px 39px 0; background-color: #fff; border-radius: 20px 20px 20px 55px; border: 1px solid #e1e3e6; } 
@@ -219,18 +219,27 @@ main .alarmService .graph li:nth-child(4) div { background: url(../images/bg-hea
 main .alarmService .graph li:nth-child(5) div { background: url(../images/bg-health-noti-3.png); } 
 
 main .divWrap { width: 30%; height: 370px; } 
-main .divWrap .title { display: block; font-size: 21px; color: #3a3a4a; margin-bottom: 19px; font-weight: 700; } 
-
-
-
-
-
-main .organization { width: 100%; height: 170px; border: 1px solid #e1e3e6; padding: 33px 39px 0; background: #fff url(../images/bg-organization.png) no-repeat right top; border-radius: 20px 55px 20px 20px; margin-bottom: 30px; } 
+main .organization { width: 100%; height: 170px; border: 1px solid #e1e3e6; padding: 33px 39px 0; background: #fff url(../images/bg-organization.png) no-repeat right top; border-radius: 20px 55px 20px 20px; margin-bottom: 30px; }
 main .findBranch { width: 100%; background: #fff url(../images/bg-center.png) no-repeat right bottom; border-radius: 55px 20px 20px 20px; height: 170px; border: 1px solid #e1e3e6; padding: 33px 39px 0; } 
+main .divWrap .title { display: block; font-size: 21px; color: #3a3a4a; margin-bottom: 19px; font-weight: 700; } 
+main .divWrap > div > a {display: block;}
+
 main .promotionZone { width: 30%; height: 370px; background-color: #fff; border: 1px solid #e1e3e6; padding: 33px 39px 0; border-radius: 20px 20px 55px 20px; } 
+main .promotionZone > p { font-size: 21px; color: #3a3a4a; margin-bottom: 19px; font-weight: 700; } 
+main .promotionZone > .nthBox { top: 37px; right: 42px; padding-right: 82px; } 
+main .promotionZone > .nthBox em { font-weight: 700; color: #3a3a4a; font-size: 16px; } 
+main .promotionZone .boxViewport {height: 240px;} 
+main .promotionZone .boxControlDirection { top: 42px; right: 49px; } 
+main .promotionZone .boxLeft { display: inline-block; width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-l.png) no-repeat; margin-right: 41px; } 
+main .promotionZone .boxRight { display: inline-block; width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-r.png) no-repeat; } 
+main .promotionZone .boxControlAuto {top: 42px; right: 73px;}
 
 main .serviceWrap { max-width: 1180px; width: 100%; height: 261px; margin: 62px auto 0; } 
 main .customerService { width: 1180px; height: 261px; background: #fff url(../images/bg-news-hiwell.png)no-repeat right top; border: 1px solid #e1e3e6; border-radius: 20px; overflow: hidden; padding: 39px; } 
+
+
+
+
 
 /* chatbot */
 .chatbotIcon > a { background: url(../images/logo_chatbot_home.png); position: fixed; display: block; right: 382px; bottom: 85px; width: 70px; height: 70px; background-size: cover; font-size: 0; text-indent: -9999px; z-index: 1; } 
