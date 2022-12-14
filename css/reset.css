@@ -12,14 +12,16 @@ button { color: inherit; cursor: pointer; }
 .df { display: flex; } 
 .pr { position: relative; } 
 .pa { position: absolute; } 
-.ps { position: static;}
+.ps { position: static; } 
 
+
+button {font-family:'Malgun Gothic',Dotum,'돋움',sans-serif; }
+address { font-style: normal; } 
 
 /*nhis reset*/
 
 
-address {font-style: normal;}
-body { font-size: 15px; line-height: 1.5; color: #6c6d73; font-weight: normal; font-weight: 400; position: relative; } 
+body { font-size: 15px; line-height: 1.5; color: #6c6d73; font-weight: normal; font-weight: 400; font-family: 'Malgun Gothic',Dotum,'돋움',sans-serif; } 
 img { vertical-align: middle; } 
-input:focus { outline: dotted 1px; } 
 em { font-style: normal; } 
+input:focus { outline: dotted 1px; } 
