@@ -1,4 +1,4 @@
-@charset "utf-8";#wrap { width: 100%; } 
+@charset "utf-8"; #wrap { width: 100%; } 
 .inner { max-width: 1180px; width: 100%; margin: 0 auto; position: relative; } 
 
 #wrap::before { background: url(../images/bg_layout_l.png); top: 0; left: 0; height: 400px; position: absolute; content: ""; width: 170px; } 
@@ -73,8 +73,9 @@ header > .gnb .gnbMenu > .normalMenu ul:nth-child(1) li { padding: 0 42px; displ
 header > .gnb .gnbMenu > .normalMenu ul:nth-child(1):hover { background: #fff; } 
 header > .gnb .gnbMenu > .normalMenu ul:hover { background: #f6f6f6; } 
 header > .gnb .gnbMenu > .normalMenu ul { width: 160px; padding: 21px 17px; } 
-header > .gnb .gnbMenu > .normalMenu li { display: block; padding: 5px 0; } 
-header > .gnb .gnbMenu > .normalMenu li:hover { color: #dd0c09; text-decoration: underline; } 
+header > .gnb .gnbMenu > .normalMenu li { display: block; line-height: 2;} 
+header > .gnb .gnbMenu > .normalMenu li a { display: block; color: #44465c; letter-spacing: -1px; } 
+header > .gnb .gnbMenu > .normalMenu li:hover a { color: #dd0c09; text-decoration: underline; } 
 header > .gnb .gnbMenu > .normalMenu a > img { margin:0 0 2px 2px; } 
 header > .gnb nav:hover > .gnbMenu > .favoriteMenu { border-top: 1px solid #e1e1e1; height: 59px; line-height: 59px; } 
 header > .gnb nav:hover > .gnbMenu > .favoriteMenu dt { font-weight: 700; color: #44465c; margin-left: 32px; } 
@@ -143,9 +144,9 @@ main .visitorMenu .menuList .n9th:hover { background: #44465c url(../images/ico-
 .mainBanner .boxWrap > .boxViewport li p { color: #111; letter-spacing: -1.5px; } 
 .mainBanner .boxWrap > .boxViewport li .slogan { font-size: 21px; margin-bottom: 5px; } 
 .mainBanner .boxWrap > .boxViewport li .title { font-size: 28px; } 
-.mainBanner .boxWrap > .boxControl a { width: 40px; height: 40px; text-indent: -9999px; border-radius: 15px; display: block;} 
-.mainBanner .boxWrap > .boxControl > .boxNext {background: #fff url(../images/arrow-slide-l.png) no-repeat; left: 30px; top: 40px;}
-.mainBanner .boxWrap > .boxControl > .boxPrev {background: #fff url(../images/arrow-slide-r.png) no-repeat; right: 30px; top: 40px;}
+.mainBanner .boxWrap > .boxControl a { width: 40px; height: 40px; text-indent: -9999px; border-radius: 15px; display: block; } 
+.mainBanner .boxWrap > .boxControl > .boxNext { background: #fff url(../images/arrow-slide-l.png) no-repeat; left: 30px; top: 40px; } 
+.mainBanner .boxWrap > .boxControl > .boxPrev { background: #fff url(../images/arrow-slide-r.png) no-repeat; right: 30px; top: 40px; } 
 
 main > .background { height: 1623px; background: #f6f6f6; padding: 80px 0 85px; } 
 main > .background > .newsWrap { max-width: 1180px; width: 100%; height: 320px; margin: 0 auto; justify-content: space-between; } 
