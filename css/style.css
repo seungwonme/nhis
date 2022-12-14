@@ -26,16 +26,16 @@ header > .servBar .userSet > ul > li:last-child { color: #d7021b; }
 
 header > .servBar .userSet input { display: none; } 
 header > .servBar .userSet label { cursor: pointer; display: inline-block; } 
-header > .servBar .userSet label::after { content: "▼"; font-size: 0.8em; margin-left: 3px; } 
+header > .servBar .userSet label::after { content: "▼"; font-size: 0.8em; margin-left: 5px; color: #434559;} 
 header > .servBar .userSet #languageToggle:checked ~ .languageMenu { display: block; } 
-header > .servBar .userSet #languageToggle:checked ~ label::after { content: "▲"; font-size: 0.8em; margin-left: 3px; } 
+header > .servBar .userSet #languageToggle:checked ~ label::after { content: "▲";} 
 header > .servBar .userSet .languageMenu { display: none; } 
 header > .servBar .userSet .languageMenu { top: 35px; right: 0; min-width: 130px; z-index: 2; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; } 
 header > .servBar .userSet .languageMenu li { display: block; line-height: 33px; letter-spacing: -0.025em; color: #44465c; font-size: 15px; } 
 header > .servBar .userSet .languageMenu li:hover > a { color: #d7021b; text-decoration: underline; } 
 
 header > .servBar .userSet #siteToggle:checked ~ .siteMenu { display: block; } 
-header > .servBar .userSet #siteToggle:checked ~ label::after { content: "▲"; font-size: 0.8em; margin-left: 3px; } 
+header > .servBar .userSet #siteToggle:checked ~ label::after { content: "▲";} 
 header > .servBar .userSet .siteMenu { display: none; top: 35px; right: 0; min-width: 130px; z-index: 2; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; color: #44465c; width: 361px; height: 260px; padding: 19px; } 
 header > .servBar .userSet .siteMenu li { width: 107px; height: 120px; } 
 header > .servBar .userSet .siteMenu a { width: 107px; height: 110px; padding-top: 10px; } 
@@ -275,7 +275,7 @@ footer .footerTop > .relatedSites .internalRelated input:checked ~ label::after 
 footer .footerTop > .relatedSites .internalRelated input:checked ~ .internalRelatedToggle { display: block; width: 241px; height: 330px; padding: 15px 20px; bottom: 150px; } 
 .internalRelatedToggle { display: none; width: 243px; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; } 
 .internalRelatedToggle ul { width: 100%; height: 100%; } 
-.internalRelatedToggle ul li a { padding: 4px 0; display: block; } 
+.internalRelatedToggle ul li a { padding: 4px 0; display: block; font-size: 15px;} 
 .internalRelatedToggle ul li a:hover { color: #d7021b; text-decoration: underline; } 
 
 footer .footerTop > .relatedSites .related { margin-left: 10px; } 
@@ -284,7 +284,7 @@ footer .footerTop > .relatedSites .related input:checked ~ label::after { conten
 footer .footerTop > .relatedSites .related input:checked ~ .relatedToggle { display: block; width: 241px; height: 362px; padding: 15px 20px; bottom: 150px; } 
 .relatedToggle { width: 241px; padding: 15px 20px; display: none; overflow-y: scroll; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; } 
 .relatedToggle ul { width: 100%; height: 100%; } 
-.relatedToggle ul li a { padding: 4px 0; display: block; } 
+.relatedToggle ul li a { padding: 4px 0; display: block; font-size: 15px;} 
 .relatedToggle ul li a:hover { color: #d7021b; text-decoration: underline; } 
 
 footer .footerTop > .relatedSites > div > a { display: inline-block; width: 46px; height: 40px; background: #fff; line-height: 40px; text-align: center; } 
