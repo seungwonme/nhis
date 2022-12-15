@@ -248,7 +248,7 @@ main .serviceWrap .title { font-size: 21px; font-weight: 700; color: #3a3a4a; ma
 main .customerService li a { display: block; height: 110px; padding: 13px 90px 0 25px; } 
 main .customerService dt { font-size: 23px; line-height: 23px; margin-bottom: 3px; color: #3a3a4a; font-weight: 700; } 
 main .customerService dd { font-size: 15px; color: #6e7174; display: block; } 
-main .customerService > ul a > p { font-size: 16px; color: #3a3a4a; font-weight: 700; padding-top: 10px; } 
+main .customerService > ul a > p { font-size: 16px; color: #3a3a4a; font-weight: 700; padding-top: 17px; } 
 main .customerService img { top: 25px; right: 30px; } 
 main .serviceWrap .newsLetter { width: 20%; } 
 main .serviceWrap .newsLetter a { padding: 20px 0 20px 80px; background: url(../images/i-newsLetter.png) no-repeat left center; display: block; } 
@@ -303,7 +303,7 @@ footer .footerBottom .certificationList > li { margin-left: 12px; }
 footer .footerBottom .certificationList > li:nth-child(1) { width: 61px; background: url(../images/mark02-img01.png); } 
 footer .footerBottom .certificationList > li:nth-child(2) { width: 40px; background: url(../images/mark02-img02.png); } 
 footer .footerBottom .certificationList > li:nth-child(3) { width: 57px; background: url(../images/mark02-img03.png); } 
-footer .footerBottom .certificationList > li:nth-child(4) { width: 55px; background: url(../images/mark02-img04.png); } 
+footer .footerBottom .certificationList > li:nth-child(4) { width: 55px; height: 39px; background: url(../images/mark02-img04.png); } 
 footer .footerBottom .certificationList > li > a { display: block; height: 41px; font-size: 0; } 
 
 footer .footerBottom .snsList { top: 60px; right: 0; } 

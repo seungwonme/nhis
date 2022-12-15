@@ -15,7 +15,7 @@ button { color: inherit; cursor: pointer; }
 .ps { position: static; } 
 
 
-button {font-family:'NBG' 'Malgun Gothic',Dotum,'돋움',sans-serif; }
+button {font-family:'NBG', 'Malgun Gothic',Dotum,'돋움',sans-serif; }
 address { font-style: normal; } 
 
 /*nhis reset*/
