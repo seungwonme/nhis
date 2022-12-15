@@ -20,13 +20,13 @@ header > .servBar .webAcc .muteAcc { background: url(../images/btn-sound.png); }
 header > .servBar .userSet { font-size: 13px; } 
 header > .servBar .userSet > ul > li { padding-left: 20px; margin-left: 20px; border-left: 1px solid #e1e1e1; color: #707377; } 
 header > .servBar .userSet > ul > li:first-child { border: none; } 
-header > .servBar .userSet > ul > li:last-child { color: #d7021b; } 
+header > .servBar .userSet > ul > li:last-child { color: #d7021b;} 
 
 /* Top userSet toggle */
 
 header > .servBar .userSet input { display: none; } 
 header > .servBar .userSet label { cursor: pointer; display: inline-block; } 
-header > .servBar .userSet label::after { content: "▼"; font-size: 0.8em; margin-left: 5px; color: #434559; } 
+header > .servBar .userSet label::after { content: "▼"; font-size: 0.6em; margin-left: 5px; color: #434559; } 
 header > .servBar .userSet #languageToggle:checked ~ .languageMenu { display: block; } 
 header > .servBar .userSet #languageToggle:checked ~ label::after { content: "▲"; } 
 header > .servBar .userSet .languageMenu { display: none; } 
@@ -272,13 +272,13 @@ footer .footerTop { height: 40px; }
 footer .footerTop > .terms { line-height:40px; } 
 footer .footerTop > .terms li { margin-left: 20px; } 
 footer .footerTop > .terms li:first-child { margin:0; } 
-footer .footerTop > .terms li:nth-child(3) { color: #d7021b; } 
+footer .footerTop > .terms li:nth-child(3) { color: #d7021b; font-weight: 700;} 
 footer .footerTop > .relatedSites > div { display: inline-block; } 
 footer .footerTop > .relatedSites input { display: none; } 
 footer .footerTop > .relatedSites label { display: inline-block; background: #fff; width: 198px; height: 40px; padding: 0 30px 0 20px; line-height: 40px; color: #000; cursor: pointer; position: relative; } 
 .relatedSites li { display: block; } 
 
-footer .footerTop > .relatedSites .internalRelated label::after { content: "▼"; font-size: 0.8em; position: absolute; right: 20px; color: #434559; } 
+footer .footerTop > .relatedSites .internalRelated label::after { content: "▼"; font-size: 0.6em; position: absolute; right: 20px; color: #434559; } 
 footer .footerTop > .relatedSites .internalRelated input:checked ~ label::after { content: "▲"; } 
 footer .footerTop > .relatedSites .internalRelated input:checked ~ .internalRelatedToggle { display: block; } 
 .internalRelatedToggle { display: none; width: 245px; height: 332px; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; padding: 15px 20px; bottom: 150px; } 
@@ -287,7 +287,7 @@ footer .footerTop > .relatedSites .internalRelated input:checked ~ .internalRela
 .internalRelatedToggle ul li a:hover { color: #d7021b; text-decoration: underline; } 
 
 footer .footerTop > .relatedSites .related { margin-left: 10px; } 
-footer .footerTop > .relatedSites .related label::after { position: absolute; right: 20px; content: "▼"; font-size: 0.8em; color: #434559; } 
+footer .footerTop > .relatedSites .related label::after { position: absolute; right: 20px; content: "▼"; font-size: 0.6em; color: #434559; } 
 footer .footerTop > .relatedSites .related input:checked ~ label::after { content: "▲"; } 
 footer .footerTop > .relatedSites .related input:checked ~ .relatedToggle { display: block; } 
 .relatedToggle { display: none; width: 245px; height: 364px; padding: 15px 20px; bottom: 150px; overflow-y: scroll; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; } 
