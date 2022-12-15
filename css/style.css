@@ -73,7 +73,7 @@ header > .gnb .gnbMenu > .normalMenu ul:nth-child(1) li { padding: 0 42px; displ
 header > .gnb .gnbMenu > .normalMenu ul:nth-child(1):hover { background: #fff; } 
 header > .gnb .gnbMenu > .normalMenu ul:hover { background: #f6f6f6; } 
 header > .gnb .gnbMenu > .normalMenu ul { width: 160px; padding: 21px 17px; } 
-header > .gnb .gnbMenu > .normalMenu li { display: block; line-height: 2;} 
+header > .gnb .gnbMenu > .normalMenu li { display: block; line-height: 2; } 
 header > .gnb .gnbMenu > .normalMenu li a { display: block; color: #44465c; letter-spacing: -1px; } 
 header > .gnb .gnbMenu > .normalMenu li:hover a { color: #dd0c09; text-decoration: underline; } 
 header > .gnb .gnbMenu > .normalMenu a > img { margin:0 0 2px 2px; } 
@@ -258,9 +258,11 @@ main .serviceWrap .appDownload > ul > li { width: calc(100% / 2 - 10px); color: 
 main .serviceWrap .appDownload li > p { width: 100%; height: 90px; line-height: 90px; margin-bottom: 6px; background-color: #f4f1f0; border-radius: 15px; } 
 
 /* chatbot */
-.chatbotIcon > a { background: url(../images/logo_chatbot_home.png); position: fixed; display: block; right: 382px; bottom: 85px; width: 70px; height: 70px; background-size: cover; font-size: 0; text-indent: -9999px; z-index: 1; } 
-/* @media (min-width: 992px) { } */
-.chatbotIcon > a { right: 80px; bottom: 85px; width: 70px; height: 70px; background-size: cover; } 
+.chatbotIcon > a { background: url(../images/logo_chatbot_home.png); position: fixed; display: block; width: 70px; height: 70px; background-size: cover; font-size: 0; text-indent: -9999px; z-index: 1; } 
+@media (min-width: 992px) {.chatbotIcon > a { right: 80px; bottom: 85px; background-size: cover; } 
+ }
+@media (max-width: 992px) {.chatbotIcon > a { right: 45px; bottom: 85px; background-size: cover; } 
+ }
 /* ~chatbot */
 
 footer { width: 100%; height: 254px; padding: 40px 0 77px; background-color: #f6f6f6; border-top: 1px solid #e1e1e1; margin-top: 55px; font-size: 13px; } 
@@ -277,7 +279,7 @@ footer .footerTop > .relatedSites label { display: inline-block; background: #ff
 footer .footerTop > .relatedSites .internalRelated label::after { content: "▼"; font-size: 0.8em; position: absolute; right: 20px; color: #434559; } 
 footer .footerTop > .relatedSites .internalRelated input:checked ~ label::after { content: "▲"; } 
 footer .footerTop > .relatedSites .internalRelated input:checked ~ .internalRelatedToggle { display: block; } 
-.internalRelatedToggle { display: none; width: 243px; height: 332px; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; padding: 15px 20px; bottom: 150px; } 
+.internalRelatedToggle { display: none; width: 245px; height: 332px; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; padding: 15px 20px; bottom: 150px; } 
 .internalRelatedToggle ul { width: 100%; height: 100%; } 
 .internalRelatedToggle ul li a { padding: 4px 0; display: block; font-size: 15px; } 
 .internalRelatedToggle ul li a:hover { color: #d7021b; text-decoration: underline; } 
@@ -286,7 +288,7 @@ footer .footerTop > .relatedSites .related { margin-left: 10px; }
 footer .footerTop > .relatedSites .related label::after { position: absolute; right: 20px; content: "▼"; font-size: 0.8em; color: #434559; } 
 footer .footerTop > .relatedSites .related input:checked ~ label::after { content: "▲"; } 
 footer .footerTop > .relatedSites .related input:checked ~ .relatedToggle { display: block; } 
-.relatedToggle { display: none; width: 243px; height: 364px; padding: 15px 20px; bottom: 150px; overflow-y: scroll; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; } 
+.relatedToggle { display: none; width: 245px; height: 364px; padding: 15px 20px; bottom: 150px; overflow-y: scroll; border: 1px solid #666779; border-radius: 5px; vertical-align: top; background: #fff; } 
 .relatedToggle ul { width: 100%; height: 100%; } 
 .relatedToggle ul li a { padding: 4px 0; display: block; font-size: 15px; } 
 .relatedToggle ul li a:hover { color: #d7021b; text-decoration: underline; } 
