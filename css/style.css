@@ -37,8 +37,8 @@ header > .servBar .userSet .languageMenu li:hover > a { color: #d7021b; text-dec
 header > .servBar .userSet #siteToggle:checked ~ .siteMenu { display: block; } 
 header > .servBar .userSet #siteToggle:checked ~ label::after { content: "▲"; } 
 header > .servBar .userSet .siteMenu { display: none; top: 35px; right: 0; min-width: 130px; z-index: 2; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; color: #44465c; width: 361px; height: 260px; padding: 19px; } 
-header > .servBar .userSet .siteMenu li { width: 107px; height: 120px; } 
-header > .servBar .userSet .siteMenu a { width: 107px; height: 110px; padding-top: 10px; } 
+header > .servBar .userSet .siteMenu li { width: 106px; height: 120px; } 
+header > .servBar .userSet .siteMenu a { width: 106px; height: 110px; padding-top: 10px; } 
 header > .servBar .userSet .siteMenu p { text-align: center; font-size: 15px; } 
 
 header > .servBar .userSet .siteMenu .n1thSite { background: url(../images/site-list-ico01.png) no-repeat 50% 50% #f16669; display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; } 
@@ -329,7 +329,7 @@ footer .scrollUp:hover { background:url(../images/btn-direction-top-on.png) no-r
 .quickMenu { position: fixed; top: 260px; right: 0; z-index: 3; } 
 .quickMenu li { display: block; position: relative; } 
 .quickMenu li a { display: block; position: relative; width: 135px; height: 40px; padding: 0 0 0 40px; background: #44465c; font-size: 13px; color: #fff; padding-right: 12px; line-height: 40px; right: -95px; transition: right 0.5s;} 
-.quickMenu li:nth-child(6) a {padding: 5px 0 0 40px;
+.quickMenu li:nth-child(6) a {padding: 7px 0 0 40px;
     line-height: 1.1;
 }
 .quickMenu li:nth-child(7) a {padding-right: 0;}
