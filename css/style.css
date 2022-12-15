@@ -259,9 +259,11 @@ main .serviceWrap .appDownload li > p { width: 100%; height: 90px; line-height: 
 
 /* chatbot */
 .chatbotIcon > a { background: url(../images/logo_chatbot_home.png); position: fixed; display: block; width: 70px; height: 70px; background-size: cover; font-size: 0; text-indent: -9999px; z-index: 1; } 
-@media (min-width: 992px) {.chatbotIcon > a { right: 80px; bottom: 85px; background-size: cover; } 
+@media (min-width: 992px){
+ .chatbotIcon > a { right: 80px; bottom: 85px; background-size: cover; } 
  }
-@media (max-width: 992px) {.chatbotIcon > a { right: 45px; bottom: 85px; background-size: cover; } 
+@media (max-width: 992px){
+ .chatbotIcon > a { right: 45px; bottom: 85px; background-size: cover; } 
  }
 /* ~chatbot */
 
@@ -320,3 +322,16 @@ footer .footerBottom .snsList > li > a { display: block; width: 32px; height: 32
 
 footer .footerBottom .footerTxt .copy { margin-top: 6px; } 
 footer .footerBottom .footerTxt address a:hover { color: #d7021b; outline: 1px solid #333; } 
+
+footer .scrollUp { position: fixed; right: 95px; bottom: 40px; z-index: 1; text-indent: -9999px; width: 40px; height: 40px; background: url(../images/btn-direction-top.png) no-repeat; } 
+footer .scrollUp:hover { background:url(../images/btn-direction-top-on.png) no-repeat; } 
+
+.quickMenu { position: fixed; top: 260px; right: 0; z-index: 3; } 
+.quickMenu li { display: block; position: relative; } 
+.quickMenu li a { display: block; position: relative; width: 135px; height: 40px; padding: 0 0 0 40px; background: #44465c; font-size: 13px; color: #fff; padding-right: 12px; line-height: 40px; right: -95px; transition: right 0.5s;} 
+.quickMenu li:nth-child(6) a {padding: 5px 0 0 40px;
+    line-height: 1.1;
+}
+.quickMenu li:nth-child(7) a {padding-right: 0;}
+.quickMenu li a:hover {right: 0;}
+.quickMenu span { position: absolute; top: 0; left: 0; width: 40px; height: 40px; line-height: 40px; text-align: center; display: inline-block; } 
