@@ -18,6 +18,8 @@ button { color: inherit; cursor: pointer; }
 button {font-family:'NBG', 'Malgun Gothic',Dotum,'돋움',sans-serif; }
 address { font-style: normal; } 
 
+/* body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} 폰트 계단 현상 방지인데 나한테 도움안됨 */
+
 /*nhis reset*/
 
 
