@@ -1,0 +1,35 @@
+header .servBar {
+    padding:12px 20px 0
+}
+header h1.logo {
+    margin-left:20px ;
+}
+header .gnb  .userSupport {
+    margin:0 20px 0 0
+}
+
+/* header > .gnb .topMenu {width: 650px;}
+header > .gnb .topMenu li {width: 130px;} */
+
+/* header > .gnb .gnbMenu > .normalMenu {padding: 0 20px;}
+header > .gnb .gnbMenu > .normalMenu ul {width: 650px;}
+header > .gnb .gnbMenu > .normalMenu ul li {width: 130px;}
+header > .gnb .gnbMenu > .normalMenu ul:first-child {width: 142px;}
+header > .gnb .gnbMenu > .normalMenu ul:last-child {width: 95px;}
+header > .gnb .gnbMenu > .normalMenu ul:first-child li {padding: 0; width: 142px;} */
+
+/* #wrap .breadcrumbs {
+    width:100%;
+    padding: 20px 20px 0
+}
+#container {
+    padding:0 20px 120px
+}
+
+#container .section-left {
+    margin-right: 30px
+}
+
+#container .contents {
+    width: calc(100% - 250px)
+} */
