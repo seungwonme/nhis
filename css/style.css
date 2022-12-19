@@ -43,13 +43,13 @@ header > .servBar .userSet #siteToggle:checked ~ label::after { content: "▲"; 
 header > .servBar .userSet .siteMenu li { width: 106px; height: 120px; } 
 header > .servBar .userSet .siteMenu a { width: 106px; height: 110px; padding-top: 10px; } 
 header > .servBar .userSet .siteMenu p { text-align: center; font-size: 15px; } 
-header > .servBar .userSet .siteMenu span {display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px;}
-header > .servBar .userSet .siteMenu .n1thSite { background: url(../images/site-list-ico01.png) no-repeat 50% 50% #f16669; } 
-header > .servBar .userSet .siteMenu .n2thSite { background: url(../images/site-list-ico02.png) no-repeat 50% 50% #bf9d83; } 
-header > .servBar .userSet .siteMenu .n3thSite { background: url(../images/site-list-ico03.png) no-repeat 50% 50% #4cc771; } 
-header > .servBar .userSet .siteMenu .n4thSite { background: url(../images/site-list-ico04.png) no-repeat 50% 50% #658dd0; } 
-header > .servBar .userSet .siteMenu .n5thSite { background: url(../images/site-list-ico05.png) no-repeat 50% 50% #58606b; } 
-header > .servBar .userSet .siteMenu .n6thSite { background: url(../images/site-list-ico06.png) no-repeat 50% 50% #9385dd; } 
+header > .servBar .userSet .siteMenu span {display: block; width: 56px; height: 56px; margin: 0 auto 10px; border-radius: 20px; background-image: url(../images/sprite.png);}
+header > .servBar .userSet .siteMenu .n1thSite { background-position: 0 -401px; background-color: #f16669; } 
+header > .servBar .userSet .siteMenu .n2thSite { background-position: -56px -401px; background-color: #bf9d83; } 
+header > .servBar .userSet .siteMenu .n3thSite { background-position: -112px -401px; background-color: #4cc771; } 
+header > .servBar .userSet .siteMenu .n4thSite { background-position: 0 -457px; background-color: #658dd0; } 
+header > .servBar .userSet .siteMenu .n5thSite { background-position: -56px -457px; background-color: #58606b; } 
+header > .servBar .userSet .siteMenu .n6thSite { background-position: -112px -457px; background-color: #9385dd; } 
 
 /* 
 ~ Top userSet toggle
@@ -116,26 +116,27 @@ main .visitorMenu .moreMenu a { background-color: #fff; border: 1px solid #69727
 main .visitorMenu .moreMenu a:hover { background-color: #f6f6f6; } 
 main .visitorMenu .menuList h2 { text-indent: -9999px; position: fixed; top: -9999px; font-size: 1px; width: 1px; height: 1px; opacity: 0; } 
 main .visitorMenu .menuList ul { width: 100%; height: 100%; justify-content: space-around; } 
-main .visitorMenu .menuList span { width: 80px; height: 80px; line-height: 80px; display: inline-block; background-color: #f6f6f6; border-radius: 32px; margin-bottom: 16px; position: relative; text-align: center; } 
+main .visitorMenu .menuList span { width: 80px; height: 80px; line-height: 80px; display: inline-block; background-image: url(../images/sprite.png); background-color: #f6f6f6; border-radius: 32px; margin-bottom: 16px; position: relative; text-align: center; } 
+main .visitorMenu .menuList span:hover {background-image: url(../images/sprite.png); background-color: #44465c; box-shadow: 2px 4px 10px 0 #9093b1; }
+main .visitorMenu .menuList .n1th { background-position: 0 0;} 
+main .visitorMenu .menuList .n2th { background-position: -80px 0;} 
+main .visitorMenu .menuList .n3th { background-position: -160px 0;} 
+main .visitorMenu .menuList .n4th { background-position: -240px 0;} 
+main .visitorMenu .menuList .n5th { background-position: 0 -80px;} 
+main .visitorMenu .menuList .n6th { background-position: -80px -80px;} 
+main .visitorMenu .menuList .n7th { background-position: -160px -80px;} 
+main .visitorMenu .menuList .n8th { background-position: -240px -80px;} 
+main .visitorMenu .menuList .n9th { background-position: 0 -160px;} 
+main .visitorMenu .menuList .n1th:hover { background-position: -80px -160px; } 
+main .visitorMenu .menuList .n2th:hover { background-position: -160px -160px; } 
+main .visitorMenu .menuList .n3th:hover { background-position: -240px -160px; } 
+main .visitorMenu .menuList .n4th:hover { background-position: 0 -240px; } 
+main .visitorMenu .menuList .n5th:hover { background-position: -80px -240px; } 
+main .visitorMenu .menuList .n6th:hover { background-position: -160px -240px; } 
+main .visitorMenu .menuList .n7th:hover { background-position: -240px -240px; } 
+main .visitorMenu .menuList .n8th:hover { background-position: 0 -320px; } 
+main .visitorMenu .menuList .n9th:hover { background-position: -80px -320px; } 
 .menuList p { text-align: center; line-height: 24px; color: #3a3a4a; font-size: 16px; } 
-main .visitorMenu .menuList .n1th { background: url(../images/ico-qualification.png) no-repeat center #f6f6f6; } 
-main .visitorMenu .menuList .n2th { background: url(../images/ico-burden.png) no-repeat center #f6f6f6; } 
-main .visitorMenu .menuList .n3th { background: url(../images/ico-refund.png) no-repeat center #f6f6f6; } 
-main .visitorMenu .menuList .n4th { background: url(../images/ico-insurance.png) no-repeat center #f6f6f6; } 
-main .visitorMenu .menuList .n5th { background: url(../images/ico-calculation.png) no-repeat center #f6f6f6; } 
-main .visitorMenu .menuList .n6th { background: url(../images/ico-transfer.png) no-repeat center #f6f6f6; } 
-main .visitorMenu .menuList .n7th { background: url(../images/ico-checkups.png) no-repeat center #f6f6f6; } 
-main .visitorMenu .menuList .n8th { background: url(../images/ico-family.png) no-repeat center #f6f6f6; } 
-main .visitorMenu .menuList .n9th { background: url(../images/ico-company-inquiry.png) no-repeat center #f6f6f6; } 
-main .visitorMenu .menuList .n1th:hover { background: #44465c url(../images/ico-qualification-on.png) no-repeat center; box-shadow: 2px 4px 10px 0 #9093b1; } 
-main .visitorMenu .menuList .n2th:hover { background: #44465c url(../images/ico-burden-on.png) no-repeat center; box-shadow: 2px 4px 10px 0 #9093b1; } 
-main .visitorMenu .menuList .n3th:hover { background: #44465c url(../images/ico-refund-on.png) no-repeat center; box-shadow: 2px 4px 10px 0 #9093b1; } 
-main .visitorMenu .menuList .n4th:hover { background: #44465c url(../images/ico-insurance-on.png) no-repeat center; box-shadow: 2px 4px 10px 0 #9093b1; } 
-main .visitorMenu .menuList .n5th:hover { background: #44465c url(../images/ico-calculation-on.png) no-repeat center; box-shadow: 2px 4px 10px 0 #9093b1; } 
-main .visitorMenu .menuList .n6th:hover { background: #44465c url(../images/ico-transfer-on.png) no-repeat center; box-shadow: 2px 4px 10px 0 #9093b1; } 
-main .visitorMenu .menuList .n7th:hover { background: #44465c url(../images/ico-checkups-on.png) no-repeat center; box-shadow: 2px 4px 10px 0 #9093b1; } 
-main .visitorMenu .menuList .n8th:hover { background: #44465c url(../images/ico-family-on.png) no-repeat center; box-shadow: 2px 4px 10px 0 #9093b1; } 
-main .visitorMenu .menuList .n9th:hover { background: #44465c url(../images/ico-company-inquiry-on.png) no-repeat center; box-shadow: 2px 4px 10px 0 #9093b1; } 
 
 .mainBanner { margin-top: 70px; padding-bottom: 80px; } 
 .mainBanner .bannerControl { margin-bottom: 18px; } 
@@ -222,11 +223,11 @@ main .alarmService .graph li:first-child label { border-left: 1px solid #ccc; bo
 main .alarmService .graph li:last-child label { border-right: 1px solid #ccc; border-radius: 0 5px 5px 0; } 
 main .alarmService .graph li div { display: none; width: 201px; height: 100px; position: absolute; top: 0; left: 13%; text-align: center; padding-top: 70px; color: #057eb6; font-weight: 700; } 
 main .alarmService .graph input:checked ~ div { display: block; } 
-main .alarmService .graph li:nth-child(1) div { background: url(../images/bg-health-noti-3.png); } 
-main .alarmService .graph li:nth-child(2) div { background: url(../images/bg-health-noti-2.png); } 
-main .alarmService .graph li:nth-child(3) div { background: url(../images/bg-health-noti-1.png); } 
-main .alarmService .graph li:nth-child(4) div { background: url(../images/bg-health-noti-4.png); } 
-main .alarmService .graph li:nth-child(5) div { background: url(../images/bg-health-noti-3.png); } 
+main .alarmService .graph li:nth-child(1) div { background: url(../images/sprite.png) -321px -200px; } 
+main .alarmService .graph li:nth-child(2) div { background: url(../images/sprite.png) -321px -100px; } 
+main .alarmService .graph li:nth-child(3) div { background: url(../images/sprite.png) -321px 0; } 
+main .alarmService .graph li:nth-child(4) div { background: url(../images/sprite.png) -321px -300px; } 
+main .alarmService .graph li:nth-child(5) div { background: url(../images/sprite.png) -321px -200px; } 
 
 main .divWrap { width: 30%; height: 370px; } 
 main .organization { width: 100%; height: 170px; border: 1px solid #e1e3e6; padding: 33px 39px 0; background: #fff url(../images/bg-organization.png) no-repeat right top; border-radius: 20px 55px 20px 20px; margin-bottom: 30px; } 
@@ -312,25 +313,27 @@ footer .footerBottom .certificationList > li > a { display: block; height: 41px;
 
 footer .footerBottom .snsList { top: 60px; right: 0; } 
 footer .footerBottom .snsList > li { margin-left: 12px; } 
-footer .footerBottom .snsList > li:nth-child(1) a { background: url(../images/ico-naver-small.png) no-repeat center #fff; } 
-footer .footerBottom .snsList > li:nth-child(1):hover a { background: url(../images/ico-naver-small-on.png) no-repeat center #44465c } 
-footer .footerBottom .snsList > li:nth-child(2) a { background: url(../images/ico-facebook-small.png) no-repeat center #fff; } 
-footer .footerBottom .snsList > li:nth-child(2):hover a { background: url(../images/ico-facebook-small-on.png) no-repeat center #44465c } 
-footer .footerBottom .snsList > li:nth-child(3) a { background: url(../images/ico-kakao-small.png) no-repeat center #fff; } 
-footer .footerBottom .snsList > li:nth-child(3):hover a { background: url(../images/ico-kakao-small-on.png) no-repeat center #44465c } 
-footer .footerBottom .snsList > li:nth-child(4) a { background: url(../images/ico-youtube-small.png) no-repeat center #fff; } 
-footer .footerBottom .snsList > li:nth-child(4):hover a { background: url(../images/ico-youtube-small-on.png) no-repeat center #44465c } 
-footer .footerBottom .snsList > li:nth-child(5) a { background: url(../images/ico-insta-small.png) no-repeat center #fff; } 
-footer .footerBottom .snsList > li:nth-child(5):hover a { background: url(../images/ico-insta-small-on.png) no-repeat center #44465c } 
-footer .footerBottom .snsList > li > a { display: block; width: 32px; height: 32px; border-radius: 15px; text-indent: -9999px; } 
+footer .footerBottom .snsList > li > a { display: block; width: 32px; height: 32px; border-radius: 15px; text-indent: -9999px; background-image: url(../images/sprite.png); background-color: #fff;} 
+footer .footerBottom .snsList > li:hover > a {background-image: url(../images/sprite.png); background-color: #44465c;}
+footer .footerBottom .snsList > li:nth-child(1) a { background-position: -169px -401px} 
+footer .footerBottom .snsList > li:nth-child(1):hover a { background-position: -169px -433px ; } 
+footer .footerBottom .snsList > li:nth-child(2) a { background-position: -201px -401px} 
+footer .footerBottom .snsList > li:nth-child(2):hover a { background-position: -201px -433px ; } 
+footer .footerBottom .snsList > li:nth-child(3) a { background-position: -233px -401px} 
+footer .footerBottom .snsList > li:nth-child(3):hover a { background-position: -233px -433px ; } 
+footer .footerBottom .snsList > li:nth-child(4) a { background-position: -265px -401px} 
+footer .footerBottom .snsList > li:nth-child(4):hover a { background-position: -265px -433px ; } 
+footer .footerBottom .snsList > li:nth-child(5) a { background-position: -297px -401px} 
+footer .footerBottom .snsList > li:nth-child(5):hover a { background-position: -297px -433px ; } 
+
 
 footer .footerBottom .footerTxt .copy { margin-top: 6px; } 
 footer .footerBottom .footerTxt address a:hover { color: #d7021b; outline: 1px solid #333; } 
 footer .footerBottom .valiator {margin-top: 20px;}
 footer .footerBottom .valiator a {margin-right: 20px;}
 
-footer .scrollUp { position: fixed; right: 55px; bottom: 40px; z-index: 1; text-indent: -9999px; width: 40px; height: 40px; background: url(../images/btn-direction-top.png) no-repeat; } 
-footer .scrollUp:hover { background:url(../images/btn-direction-top-on.png) no-repeat; } 
+footer .scrollUp { position: fixed; right: 55px; bottom: 40px; z-index: 1; text-indent: -9999px; width: 40px; height: 40px; background: url(../images/sprite.png) -260px -340px; } 
+footer .scrollUp:hover { background:url(../images/sprite.png) -180px -340px; } 
 
 .quickMenu { position: fixed; top: 260px; right: -95px; z-index: 3; } 
 .quickMenu li { display: block; position: relative; margin-bottom: 1px;} 
