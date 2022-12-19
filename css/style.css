@@ -1,4 +1,8 @@
 @charset "utf-8"; 
+
+.goMenu a {display: block; position: absolute; left: 2px; top: 10px; transform: translateY(-9999%); width: 400px; padding: 5px 0; text-align: center; z-index: 4;}
+.goMenu a:focus {transform: translateY(0); background: #fff; color: #000; border: 1px dotted red;}
+
 #wrap { width: 100%; } 
 #wrap::before { background: url(../images/bg_layout_l.png); top: 0; left: 0; height: 400px; position: absolute; content: ""; width: 170px; } 
 #wrap::after { background: url(../images/bg_layout_r.png); top: 0; right: 0; height: 400px; position: absolute; content: ""; width: 170px; } 
@@ -260,7 +264,7 @@ main .serviceWrap .appDownload li > p { width: 100%; height: 90px; line-height: 
 /* chatbot */
 .chatbotIcon > a { background: url(../images/logo_chatbot_home.png); position: fixed; display: block; width: 70px; height: 70px; background-size: cover; font-size: 0; text-indent: -9999px; z-index: 1; } 
 @media (min-width: 992px){
- .chatbotIcon > a { right: 80px; bottom: 85px; background-size: cover; } 
+ .chatbotIcon > a { right: 40px; bottom: 85px; background-size: cover; } 
  }
 @media (max-width: 992px){
  .chatbotIcon > a { right: 45px; bottom: 85px; background-size: cover; } 
@@ -322,8 +326,10 @@ footer .footerBottom .snsList > li > a { display: block; width: 32px; height: 32
 
 footer .footerBottom .footerTxt .copy { margin-top: 6px; } 
 footer .footerBottom .footerTxt address a:hover { color: #d7021b; outline: 1px solid #333; } 
+footer .footerBottom .valiator {margin-top: 20px;}
+footer .footerBottom .valiator a {margin-right: 20px;}
 
-footer .scrollUp { position: fixed; right: 95px; bottom: 40px; z-index: 1; text-indent: -9999px; width: 40px; height: 40px; background: url(../images/btn-direction-top.png) no-repeat; } 
+footer .scrollUp { position: fixed; right: 55px; bottom: 40px; z-index: 1; text-indent: -9999px; width: 40px; height: 40px; background: url(../images/btn-direction-top.png) no-repeat; } 
 footer .scrollUp:hover { background:url(../images/btn-direction-top-on.png) no-repeat; } 
 
 .quickMenu { position: fixed; top: 260px; right: 0; z-index: 3; } 

@@ -1,13 +1,26 @@
 header .servBar {
-    padding:12px 20px 0
+    padding:0 20px
 }
 header h1.logo {
     margin-left:20px ;
 }
 header .gnb  .userSupport {
-    margin:0 20px 0 0
+    margin-right: 20px;
 }
-
+header > .gnb .gnbMenu {padding: 0 20px;}
+main .background {padding: 50px 20px 55px;}
+main > .inner {padding: 0 20px;}
+main > .visitorMenu > .inner {padding: 0 20px;}
+.mainBanner .nthBox {padding: 0 20px;}
+.mainBanner .boxWrap {border-radius: 0;}
+main .visitorMenu {margin-top: 60px;}
+footer {padding: 40px 15px 77px;}
+main .customerService li a {padding: 13px 15px 23px;}
+main .customerService li a > img {display: none;}
+main .mainPolicy dt {font-size: 17px; line-height: 32px;}
+main .mainPolicy dt strong {font-size: 23px;}
+.mainBanner {padding-bottom: 45px;}
+.scrollUp {display: none;}
 /* header > .gnb .topMenu {width: 650px;}
 header > .gnb .topMenu li {width: 130px;} */
 
