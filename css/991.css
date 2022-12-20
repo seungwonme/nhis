@@ -1,0 +1,19 @@
+header {width: 100%; height: auto; padding: 0;}
+header > .servBar > .inner { display: none; } 
+header > .gnb {height: 65px; border-bottom: 1px solid #e1e3e6;}
+header > .gnb > .inner { padding: 0 87px 0 14px; } 
+header > .gnb > .inner::before { width: 180px; height: 74px; content: ""; position: absolute; top: 0; right: 0; z-index: 1; background: url(../images/m-header-bg.png) no-repeat; background-size: 180px 74px; } 
+header > .gnb .logo {display: inline-block; height: auto;}
+header > .gnb .logo > a { width: 100px; height: 52px; background-size: 100px 39px; } 
+header > .gnb .topMenu { display: none; } 
+header > .gnb nav { display: block; } 
+header .gnb .userSupport { margin: 0; display: inline-block; line-height: 0; position: absolute; top: 19px; right: 18px; z-index: 1;} 
+header > .gnb .userSupport > .searchSup { width: 20px; height: 20px; background: url(../images/ico-search.png) no-repeat center /20px 20px; } 
+header > .gnb .userSupport > .fullMenuSup { width: 19px; height: 16px; background: url(../images/ico-menu-white.png) no-repeat center /19px 16px; } 
+header h1.logo { margin: 0; } 
+header > .gnb nav:hover > .gnbMenu { display: none; } 
+
+
+
+main .alarmService { padding:33px 20px 0; } 
+.quickMenu {display: none;}

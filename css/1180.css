@@ -1,48 +1,27 @@
-header .servBar {
-    padding:0 20px
-}
-header h1.logo {
-    margin-left:20px ;
-}
-header .gnb  .userSupport {
-    margin-right: 20px;
-}
-header > .gnb .gnbMenu {padding: 0 20px;}
-main .background {padding: 50px 20px 55px;}
-main > .inner {padding: 0 20px;}
-main > .visitorMenu > .inner {padding: 0 20px;}
-.mainBanner .nthBox {padding: 0 20px;}
-.mainBanner .boxWrap {border-radius: 0;}
-main .visitorMenu {margin-top: 60px;}
-footer {padding: 40px 15px 77px;}
-main .customerService li a {padding: 13px 15px 23px;}
-main .customerService li a > img {display: none;}
-main .mainPolicy dt {font-size: 17px; line-height: 32px;}
-main .mainPolicy dt strong {font-size: 23px;}
-.mainBanner {padding-bottom: 45px;}
-.scrollUp {display: none;}
-/* header > .gnb .topMenu {width: 650px;}
-header > .gnb .topMenu li {width: 130px;} */
-
-/* header > .gnb .gnbMenu > .normalMenu {padding: 0 20px;}
-header > .gnb .gnbMenu > .normalMenu ul {width: 650px;}
-header > .gnb .gnbMenu > .normalMenu ul li {width: 130px;}
-header > .gnb .gnbMenu > .normalMenu ul:first-child {width: 142px;}
-header > .gnb .gnbMenu > .normalMenu ul:last-child {width: 95px;}
-header > .gnb .gnbMenu > .normalMenu ul:first-child li {padding: 0; width: 142px;} */
-
-/* #wrap .breadcrumbs {
-    width:100%;
-    padding: 20px 20px 0
-}
-#container {
-    padding:0 20px 120px
-}
-
-#container .section-left {
-    margin-right: 30px
-}
-
-#container .contents {
-    width: calc(100% - 250px)
-} */
+header .servBar { padding:0 20px}
+header h1.logo { margin-left:20px; } 
+header > .gnb .topMenu { flex: 0 0 690px; } 
+header > .gnb .topMenu > a { flex: 0 0 138px; } 
+header .gnb .userSupport { margin-right: 20px; } 
+header > .gnb nav:hover > .gnbMenu { height: 405px; } 
+header > .gnb .gnbMenu { padding: 0 20px; } 
+header > .gnb .normalMenu > .inner > div.df { flex: 0 0 690px; } 
+header > .gnb .normalMenu ul { flex:0 0 138px; padding: 13px 17px; } 
+main > .inner { padding: 0 20px; } 
+main > .visitorMenu > .inner { padding: 0 20px; } 
+.mainBanner { padding-bottom: 45px; } 
+.mainBanner .nthBox { padding: 0 20px; } 
+.mainBanner .boxWrap { border-radius: 0; } 
+main .visitorMenu { margin-top: 60px; } 
+main .background { padding: 50px 20px 55px; } 
+main .mainPolicy dt { font-size: 17px; line-height: 32px; } 
+main .mainPolicy dt strong { font-size: 23px; } 
+main .customerService > ul a > p { padding-left: 10px; } 
+main .serviceWrap .customerService { width: 51%; } 
+main .serviceWrap .newsLetter { width: 24%; } 
+main .serviceWrap .appDownload { width: 21%; } 
+main .findBranch { padding: 33px 0 0 39px;; } 
+main .customerService li a { padding: 13px 15px 23px; } 
+main .customerService li a > img { display: none; } 
+footer { padding: 40px 15px 77px; } 
+.scrollUp { display: none; } 
