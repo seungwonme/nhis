@@ -16,6 +16,7 @@ main .visitorMenu { margin-top: 60px; }
 main .background { padding: 50px 20px 55px; } 
 main .mainPolicy dt { font-size: 17px; line-height: 32px; } 
 main .mainPolicy dt strong { font-size: 23px; } 
+main .mainPolicy dd > a {height: 27px;}
 main .customerService > ul a > p { padding-left: 10px; } 
 main .serviceWrap .customerService { width: 51%; } 
 main .serviceWrap .newsLetter { width: 24%; } 
