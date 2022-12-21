@@ -1,0 +1,12 @@
+main .searchWrap .formArea { padding-right: 57px; } 
+main .searchWrap .formArea input { height: 42px; font-size: 15px; text-indent: 15px; } 
+main .searchWrap .formArea button { width: 42px; height: 42px; background-size: 20px 20px; border-radius: 15px; } 
+main .visitorMenu { margin-top: 40px; } 
+main .visitorMenu .titleWrap { margin-bottom: 25px; } 
+main .visitorMenu .menuList ul { flex-wrap: wrap; justify-content: flex-start; } 
+main .visitorMenu .menuList li { width: 20%; margin-top: 30px; } 
+main .mainPolicy dt strong { font-size: 25px; } 
+main .eventBanner, main .promotionZone, main .divWrap > div { padding: 33px 25px 0; } 
+main .eventBanner > .nthBox, main .promotionZone > .nthBox { right: 25px; padding-right: 60px; } 
+main .eventBanner .boxControlDirection, main .promotionZone .boxControlDirection {right: 21px;}
+main .eventBanner .boxControlAuto, main .promotionZone .boxControlAuto {right: 45px;}

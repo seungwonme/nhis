@@ -3,10 +3,10 @@ header h1.logo { margin-left:20px; }
 header > .gnb .topMenu { flex: 0 0 690px; } 
 header > .gnb .topMenu > a { flex: 0 0 138px; } 
 header .gnb .userSupport { margin-right: 20px; } 
-header > .gnb nav:hover > .gnbMenu { height: 405px; } 
-header > .gnb .gnbMenu { padding: 0 20px; } 
+header > .gnb .gnbMenu { padding: 0 20px;} 
 header > .gnb .normalMenu > .inner > div.df { flex: 0 0 690px; } 
 header > .gnb .normalMenu ul { flex:0 0 138px; padding: 13px 17px; } 
+header > .gnb nav> .gnbMenu > .favoriteMenu {line-height: 43px;}
 main > .inner { padding: 0 20px; } 
 main > .visitorMenu > .inner { padding: 0 20px; } 
 .mainBanner { padding-bottom: 45px; } 
