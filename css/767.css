@@ -4,20 +4,25 @@ header .gnb .userSupport { top: 15px; }
 header > .gnb > .inner::before { width: 134px; height: 65px; background-size: 134px 65px; } 
 main { padding-top: 35px; } 
 main .searchWrap { padding: 5px; } 
-main .visitorMenu .titleWrap { margin: 0; } 
+main .visitorMenu .titleWrap { margin: 0; padding: 0 20px;} 
+main .visitorMenu .menuList ,main .visitorMenu .inner {padding: 0;}
+.mainBanner {padding: 0;}
 .mainBanner .bannerControl, .mainBanner .boxWrap > .boxControl { display: none; } 
 .mainBanner .boxWrap > .boxViewport li .slogan { font-size: 14px; } 
 .mainBanner .boxWrap > .boxViewport li .title { font-size: 21px; } 
 main .background {padding: 60px 20px 40px;}
+main > .background > .newsWrap > .newsArea {margin: 0;}
 main > .background > .newsWrap, main .policyWrap ,main .aboutWrap { display: block; height: auto;} 
 main > .background > .newsWrap > div , main .policyWrap > div, main .alarmService{ width: 100%; float: none; margin: 30px 0 0 0; } 
 main .eventBanner {padding: 30px 25px;}
 main .eventBanner .boxViewport img {height: auto;}
 main .aboutWrap::after {content: ""; clear: both; display: block;} 
 main .alarmService {margin-bottom: 20px;}
+main .policyWrap, main .aboutWrap , main .divWrap {margin: 0;}
 main .divWrap {width: 50%; padding-right: 20px; float: left;}
 main .promotionZone {width: 50%; float: right;}
 main .customerService li a {padding: 10px 15px;}
 main .customerService dt {font-size: 16px; line-height: 19px;}
 main .customerService dd {font-size: 13px;}
+main .serviceWrap .newsLetter p {font-size: 14px;}
 footer .footerBottom .snsList {border: none; padding-top: 0;}
