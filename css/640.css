@@ -1,7 +1,9 @@
-#layerPopup { display: none; } 
 main { padding: 0; } 
 main .searchWrap { display: none; } 
 main > .inner { padding: 0; } 
+main .noticeBanner, .noticeBanner {max-height: 100%;}
+main .noticeBanner .boxViewport {max-height: 100%;}
+main .noticeBanner .boxViewport ul {max-height: 100%;}
 main .noticeBanner, main .noticeBanner ul { width: 100%; } 
 main .noticeBanner .boxControl, main .noticeBanner .nthBox { display: none; } 
 main .mainPolicy, main .alarmService { display: none; } 
@@ -9,10 +11,11 @@ main .divWrap { width: 100%; height: auto; padding: 0; margin-bottom: 40px; }
 main .organization { margin: 30px 0; } 
 main .promotionZone { width: 100%; } 
 main .serviceWrap .customerService, main .serviceWrap .newsLetter { width: 100%; float: none; } 
-main .serviceWrap .newsLetter {margin-top: 30px;}
-main .serviceWrap .newsLetter a { padding: 5px 5px 0 80px;}
+main .serviceWrap .newsLetter { margin-top: 30px; } 
+main .serviceWrap .newsLetter a { padding: 5px 5px 0 80px; } 
 main .serviceWrap .newsLetter p.title { font-size: 19px; margin-bottom: 17px; } 
 footer .footerTop > .relatedSites > div { display: block; } 
 footer .footerTop > .relatedSites label { width: 80%; } 
 footer .footerTop > .relatedSites .related { margin: 10px 0 0 0; } 
-.internalRelatedToggle { bottom: 380px; } 
+.internalRelatedToggle { bottom: 380px; left: 34px; } 
+.relatedToggle {left: 34px;}

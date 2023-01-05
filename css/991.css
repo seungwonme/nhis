@@ -1,3 +1,4 @@
+#layerPopup a { padding: 0 10px; } 
 header { width: 100%; height: auto; padding: 0; } 
 header > .servBar > .inner { display: none; } 
 header > .gnb { height: 65px; border-bottom: 1px solid #e1e3e6; } 
@@ -11,8 +12,8 @@ header .gnb .userSupport { margin: 0; display: inline-block; line-height: 0; pos
 header > .gnb .userSupport > .searchSup { width: 20px; height: 20px; background: url(../images/ico-search.png) no-repeat center /20px 20px; } 
 header > .gnb .userSupport > .fullMenuSup { width: 19px; height: 16px; background: url(../images/ico-menu-white.png) no-repeat center /19px 16px; } 
 header h1.logo { margin: 0; } 
-main .noticeBanner {width: 43%;}
-main .noticeBanner .boxViewport li {width: 100%;}
+main .noticeBanner { width: 43%; } 
+main .noticeBanner .boxViewport li { width: calc(100%/14); } 
 main .visitorMenu .moreMenu a { padding: 0 6px; } 
 main .visitorMenu .menuList ul { justify-content: space-between; padding: 0 10px; } 
 main .visitorMenu .menuList span { width: 70px; height: 70px; line-height: 70px; margin-bottom: 3px; } 
@@ -49,18 +50,18 @@ main .serviceWrap { display: block; margin-top: 45px; height: auto; padding: 45p
 main .serviceWrap .customerService { width: 63%; float: left; margin: 0; } 
 main .serviceWrap .newsLetter { width: 33%; float: right; } 
 main .serviceWrap .appDownload { width: 100%; clear: both; padding-top: 30px; } 
-footer { text-align: center; padding: 40px 15px 30px;} 
+footer { text-align: center; padding: 40px 15px 30px; } 
 footer .footerTop { height: auto; } 
 footer .footerTop .terms.fl { float: none; text-align: center; } 
-footer .footerTop .relatedSites.fr { float: none; text-align: center; }
-footer .footerTop .relatedSites label {text-align: left;} 
-.internalRelatedToggle {bottom: 330px; text-align: left;}
-.relatedToggle {bottom: 330px; text-align: left;}
+footer .footerTop .relatedSites.fr { float: none; text-align: center; } 
+footer .footerTop .relatedSites label { text-align: left; } 
+.internalRelatedToggle { bottom: 330px; text-align: left; } 
+.relatedToggle { bottom: 330px; text-align: left; } 
 footer .footerBottom { margin-top: 25px; padding: 0; } 
 footer .footerBottom .certificationList { position: static; display: block; padding: 15px 0; border-top: 1px solid #e5e5e5; } 
 footer .footerBottom .certificationList > li > a { line-height: 72px; } 
 footer .footerBottom .snsList { position: static; display: block; padding: 15px 0; border-top: 1px solid #e5e5e5; } 
-footer .footerBottom .footerTxt {margin-top: 10px;}
+footer .footerBottom .footerTxt { margin-top: 10px; } 
 
 
 

@@ -5,7 +5,9 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWVSEJMXD7"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
 
             gtag('config', 'G-PWVSEJMXD7');
@@ -65,20 +67,18 @@
         <link rel="stylesheet" href="css/767.css" media="screen and (max-width:767px)">
         <link rel="stylesheet" href="css/640.css" media="screen and (max-width:640px)">
         <link rel="stylesheet" href="css/530.css" media="screen and (max-width:530px)">
-        <script src='https://code.jquery.com/jquery-3.6.3.min.js'></script>
-        <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     </head>
     <body>
+        <div id="layerPopup">
+            이 사이트는 학습용으로 제작하였으며 국민건강보험과 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
+            <a id="close">닫기</a>
+        </div>
         <ul class="goMenu pa">
             <li><a href="#main">본문 바로가기</a></li>
             <li><a href="#gnb">주메뉴 바로가기</a></li>
         </ul>
-        <div id="layerPopup">
-                이 사이트는 학습용으로 제작하였으며 국민건강보험과 무관합니다.
-                구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
-            <button>닫기</button>
-        </div>
-        <div id="wrap" class="pa">
+        <div id="wrap" class="t40">
             <header>
                 <div class="servBar">
                     <div class="inner">
@@ -118,30 +118,42 @@
                                     <label for="siteToggle">분야별업무사이트</label>
                                     <div class="siteMenu pa">
                                         <ul>
-                                            <li class="fl"><a href="">
-                                                <span class="n1thSite"></span>
-                                                <p>사회보험<br>통합징수 포털</p>
-                                            </a></li>
-                                            <li class="fl"><a href="">
-                                                <span class="n2thSite"></span>
-                                                <p>노인장기<br>요양보험</p>
-                                            </a></li>
-                                            <li class="fl"><a href="">
-                                                <span class="n3thSite"></span>
-                                                <p>요양기관<br>정보마당</p>
-                                            </a></li>
-                                            <li class="fl"><a href="">
-                                                <span class="n4thSite"></span>
-                                                <p>EDI<br>서비스</p>
-                                            </a></li>
-                                            <li class="fl"><a href="">
-                                                <span class="n5thSite"></span>
-                                                <p>건강관리<br>포털시스템</p>
-                                            </a></li>
-                                            <li class="fl"><a href="">
-                                                <span class="n6thSite"></span>
-                                                <p>건강보험자료<br>공유서비스</p>
-                                            </a></li>
+                                            <li class="fl">
+                                                <a href="">
+                                                    <span class="n1thSite"></span>
+                                                    <p>사회보험<br>통합징수 포털</p>
+                                                </a>
+                                            </li>
+                                            <li class="fl">
+                                                <a href="">
+                                                    <span class="n2thSite"></span>
+                                                    <p>노인장기<br>요양보험</p>
+                                                </a>
+                                            </li>
+                                            <li class="fl">
+                                                <a href="">
+                                                    <span class="n3thSite"></span>
+                                                    <p>요양기관<br>정보마당</p>
+                                                </a>
+                                            </li>
+                                            <li class="fl">
+                                                <a href="">
+                                                    <span class="n4thSite"></span>
+                                                    <p>EDI<br>서비스</p>
+                                                </a>
+                                            </li>
+                                            <li class="fl">
+                                                <a href="">
+                                                    <span class="n5thSite"></span>
+                                                    <p>건강관리<br>포털시스템</p>
+                                                </a>
+                                            </li>
+                                            <li class="fl">
+                                                <a href="">
+                                                    <span class="n6thSite"></span>
+                                                    <p>건강보험자료<br>공유서비스</p>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </li>
@@ -169,8 +181,7 @@
                             <div class="gnbMenu pa">
                                 <div class="normalMenu">
                                     <div class="inner df">
-                                        <div>
-                                        </div>
+                                        <div></div>
                                         <div class="df">
                                             <ul>
                                                 <li>
@@ -209,8 +220,7 @@
                                                     <a href="" title="검진기관/병원찾기">검진기관/병원찾기</a>
                                                 </li>
                                                 <li>
-                                                    <a href="" title="새창열림" target="_blank">국민건강알람<img src="images/ico-link2.png" alt="">
-                                                    </a>
+                                                    <a href="" title="새창열림" target="_blank">국민건강알람<img src="images/ico-link2.png" alt=""> </a>
                                                 </li>
                                                 <li>
                                                     <a href="" title="건강생활실천지원금제">건강생활실천지원금제</a>
@@ -307,90 +317,93 @@
                         </div>
                     </div>
                     <div class="noticeBanner fr pr">
-                        <div class="boxWrap">
-                            <div class="boxViewport pr">
-                                <ul>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20201110_banner_pc02.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20210331_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20220620_banner_pc02.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20221125_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20220628_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20221103_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20221109_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20221110_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20221115_banner_pc02.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20221121_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20221122_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20221123_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://seungwonme.github.io/nhis/" target="_blank">
-                                            <img src="images/banner/20221124_banner_pc01.png" alt="bannerimg">
-                                        </a>
-                                    </li> -->
-                                </ul>
+                        <div class="boxViewport pr">
+                            <ul class="cf">
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20201110_banner_pc02.png" alt="bannerimg" class="bgImg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20210331_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20220620_banner_pc02.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20220628_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221024_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221103_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221109_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221110_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221115_banner_pc02.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221121_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221122_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221123_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221124_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://seungwonme.github.io/nhis/" target="_blank">
+                                        <img src="images/banner/20221125_banner_pc01.png" alt="bannerimg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="boxControl">
+                            <div class="boxControlDirection pa">
+                                <a class="boxLeft fl">왼쪽</a>
+                                <a class="boxRight fl">오른쪽</a>
                             </div>
-                            <div class="boxControl">
-                                <div class="boxControlDirection pa">
-                                    <a class="boxLeft fl" href="">왼쪽</a>
-                                    <a class="boxRight fl" href="">오른쪽</a>
-                                </div>
-                                <div class="boxControlAuto pa">
-                                    <a class="boxStop" href="">멈추기</a>
-                                </div>
-                                <div class=""></div>
+                            <div class="boxControlAuto pa">
+                                <a class="boxStop">멈추기</a>
                             </div>
+                            <div class=""></div>
                         </div>
                         <div class="nthBox pa">
                             <span>
-                                <em>1</em>
+                                <em class="nth">1</em>
                                 /
                                 <em>14</em>
                             </span>
@@ -405,7 +418,7 @@
                         <div class="titleWrap">
                             <strong class="menuTitle">방문자별 맞춤 메뉴</strong>
                             <span class="menuToggle pr cf">
-                                <button style="color: #fff">개인</button>
+                                <button class="on">개인</button>
                                 <button>사업장</button>
                             </span>
                             <span class="moreMenu fr">
@@ -519,7 +532,7 @@
                                     <em>3</em>
                                 </span>
                                 <a title="새창열림" href="#">
-                                    <img src="images/slide-pause.png" style="margin:0 0 5px 15px" alt="bgimg">
+                                    <img src="images/slide-pause.png" style="margin: 0 0 5px 15px" alt="bgimg">
                                 </a>
                             </div>
                         </div>
@@ -567,10 +580,18 @@
                         <div class="headthInfo">
                             <p>건강정보</p>
                             <ul>
-                                <li><a href="">가까운 병의원 찾기<img src="images/arrow-link.png" alt=""></a></li>
-                                <li><a href="">검진기관 찾기<img src="images/arrow-link.png" alt=""></a></li>
-                                <li><a href="">건강뉴스<img src="images/arrow-link.png" alt=""></a></li>
-                                <li><a href="">건강웹툰<img src="images/arrow-link.png" alt=""></a></li>
+                                <li>
+                                    <a href="">가까운 병의원 찾기<img src="images/arrow-link.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="">검진기관 찾기<img src="images/arrow-link.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="">건강뉴스<img src="images/arrow-link.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="">건강웹툰<img src="images/arrow-link.png" alt=""></a>
+                                </li>
                             </ul>
                         </div>
                         <div class="quickLink">
@@ -578,9 +599,12 @@
                                 <li><a href="">정보공개청구</a></li>
                                 <li><a href="">사전정보목록</a></li>
                                 <li><a href="">보장성강화</a></li>
-                                <li><a href="" style="padding-top: 5px;">건강보험연구원
-                                    <p lang="en">Health Insurance Research<br>Institute(HIRI)</p>
-                                </a></li>
+                                <li>
+                                    <a href="" style="padding-top: 5px"
+                                        >건강보험연구원
+                                        <p lang="en">Health Insurance Research<br>Institute(HIRI)</p>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -595,33 +619,41 @@
                                     <a href="">
                                         <p>소중한 나의 가족! 건강관리 쉽게 하는 방법은 없을까요?</p>
                                         <div class="speechBubble">
-                                            <p><span>가족건강관리</span>
+                                            <p>
+                                                <span>가족건강관리</span>
                                                 <br>
-                                            </p>서비스를 확인해 보세요!
+                                            </p>
+                                            서비스를 확인해 보세요!
                                         </div>
                                     </a>
                                     <a href="">
                                         <p>피부양자 자격 취득·상실 기준이 어떻게 될까요?</p>
                                         <div class="speechBubble">
-                                            <p><span>피부양자 인정기준을</span>
+                                            <p>
+                                                <span>피부양자 인정기준을</span>
                                                 <br>
-                                            </p>도표로 확인해보세요!
+                                            </p>
+                                            도표로 확인해보세요!
                                         </div>
                                     </a>
                                     <a href="">
                                         <p>공단은 지역사회에서 어떤 일을 할까요?</p>
                                         <div class="speechBubble">
-                                            <p><span>지역사회</span>에서
+                                            <p>
+                                                <span>지역사회</span>에서
                                                 <br>
-                                            </p>공단의 역할을 확인해 보세요!
+                                            </p>
+                                            공단의 역할을 확인해 보세요!
                                         </div>
                                     </a>
                                     <a href="">
                                         <p>내 건강보험료는 어떻게 책정되었을까요?</p>
                                         <div class="speechBubble">
-                                            <p><span>보험료 부과 및 산정</span>
+                                            <p>
+                                                <span>보험료 부과 및 산정</span>
                                                 <br>
-                                            </p>기준을 확인해 보세요!
+                                            </p>
+                                            기준을 확인해 보세요!
                                         </div>
                                     </a>
                                 </dd>
@@ -690,8 +722,10 @@
                                 <a href="">
                                     <dl>
                                         <dt class="title">조직도</dt>
-                                        <dd>국민건강보험공단의<br>
-                                            부서별 조직도를 확인해보세요.</dd>
+                                        <dd>
+                                            국민건강보험공단의<br>
+                                            부서별 조직도를 확인해보세요.
+                                        </dd>
                                     </dl>
                                 </a>
                             </div>
@@ -699,8 +733,10 @@
                                 <a href="">
                                     <dl>
                                         <dt class="title">지사찾기</dt>
-                                        <dd>가까운 지사를 방문하시면<br>
-                                            민원업무를 처리하실 수 있습니다.</dd>
+                                        <dd>
+                                            가까운 지사를 방문하시면<br>
+                                            민원업무를 처리하실 수 있습니다.
+                                        </dd>
                                     </dl>
                                 </a>
                             </div>
@@ -712,7 +748,7 @@
                             </div>
                             <div class="boxWrap">
                                 <div class="boxViewport">
-                                    <a href=""><img src="images/promotionbanner1.png" alt="사이버 홍보관 건강보험 정책과 정보를 쉽게 알려드립니다." style="max-width: 100%;"></a>
+                                    <a href=""><img src="images/promotionbanner1.png" alt="사이버 홍보관 건강보험 정책과 정보를 쉽게 알려드립니다." style="max-width: 100%"></a>
                                 </div>
                                 <div class="boxControl">
                                     <div class="boxControlDirection pa">
@@ -735,15 +771,15 @@
                                         <dl>
                                             <dt>
                                                 1577-1000<br>
-                                                <p style="font-size: 13px;">(해외이용 : 82-33-811-2001)</p>
+                                                <p style="font-size: 13px">(해외이용 : 82-33-811-2001)</p>
                                             </dt>
-                                            <dd>업무 시간  09:00~18:00</dd>
-                                            <dd style="font-size: 12px;">(이용료: 발신자 부담)</dd>
+                                            <dd>업무 시간 09:00~18:00</dd>
+                                            <dd style="font-size: 12px">(이용료: 발신자 부담)</dd>
                                         </dl>
                                         <img class="pa" src="images/i-customer-1.png" alt="">
                                     </a>
                                 </li>
-                                <li class="pr" style="margin-left: 20px;">
+                                <li class="pr" style="margin-left: 20px">
                                     <a href="">
                                         <p>외국인 민원센터</p>
                                         <img class="pa" src="images/i-customer-2.png" alt="">
@@ -767,10 +803,13 @@
                             <p class="title">APP 다운로드</p>
                             <ul>
                                 <li>
-                                    <p><img src="images/qr-android.png" alt=""></p>Android
-                                    
-                                <li style="margin-left: 20px;">
-                                    <p><img src="images/qr-ios.png" alt=""></p>iOS
+                                    <p><img src="images/qr-android.png" alt=""></p>
+                                    Android
+                                </li>
+
+                                <li style="margin-left: 20px">
+                                    <p><img src="images/qr-ios.png" alt=""></p>
+                                    iOS
                                 </li>
                             </ul>
                         </div>
@@ -862,9 +901,7 @@
                             <li><a href="">인스타그램</a></li>
                         </ul>
                         <div class="footerTxt">
-                            <address>
-                                26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 <a href="tel:1577-1000">고객센터 :1577-1000(발신자 부담)</a> 업무시간 : 09시~18시(월~금)
-                            </address>
+                            <address>26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 <a href="tel:1577-1000">고객센터 :1577-1000(발신자 부담)</a> 업무시간 : 09시~18시(월~금)</address>
                             <p class="copy">Copyright @ 2020 by National Health Insurance Service. All rights reserved.</p>
                         </div>
                         <div class="valiator">
@@ -879,13 +916,41 @@
             </footer>
             <div class="quickMenu">
                 <ul>
-                    <li><a href=""><span><img src="images/ico-release-info.png" alt=""></span> 정보공개</a></li>
-                    <li><a href=""><span><img src="images/ico-civil-complaint.png" alt=""></span> 민원상담</a></li>
-                    <li><a href=""><span><img src="images/ico-customer-center.png" alt=""></span> 고객센터</a></li>
-                    <li><a href=""><span><img src="images/ico-customer-security.png" alt=""></span> 보안프로그램</a></li>
-                    <li><a href=""><span><img src="images/ico-form.png" alt=""></span> 서식자료실</a></li>
-                    <li><a href=""><span><img src="images/ico-help-center.png" alt=""></span> 홈페이지<br>도움센터</a></li>
-                    <li><a href=""><span><img src="images/ico-kakao-on.png" alt=""></span> 챗봇/채팅 상담</a></li>
+                    <li>
+                        <a href=""
+                            ><span><img src="images/ico-release-info.png" alt=""></span> 정보공개</a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span><img src="images/ico-civil-complaint.png" alt=""></span> 민원상담</a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span><img src="images/ico-customer-center.png" alt=""></span> 고객센터</a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span><img src="images/ico-customer-security.png" alt=""></span> 보안프로그램</a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span><img src="images/ico-form.png" alt=""></span> 서식자료실</a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span><img src="images/ico-help-center.png" alt=""></span> 홈페이지<br>도움센터</a
+                        >
+                    </li>
+                    <li>
+                        <a href=""
+                            ><span><img src="images/ico-kakao-on.png" alt=""></span> 챗봇/채팅 상담</a
+                        >
+                    </li>
                 </ul>
             </div>
         </div>

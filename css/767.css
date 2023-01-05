@@ -1,4 +1,4 @@
-#layerPopup { padding-left: 5px; text-align: left; font-size: 13px; } 
+#layerPopup {font-size: 10px;}
 header > .gnb { height: 53px; } 
 header .gnb .userSupport { top: 15px; } 
 header > .gnb > .inner::before { width: 134px; height: 65px; background-size: 134px 65px; } 
