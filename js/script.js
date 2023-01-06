@@ -39,34 +39,51 @@ const noticeBannerNext = document.querySelector('.boxRight');
 const noticeBannerPrev = document.querySelector('.boxLeft');
 const noticeBannerStop = document.querySelector('.boxStop');
 const noticeBannerImg = document.querySelector('.bgImg');
+const noticeBannerBox = document.querySelectorAll('.boxViewport .cf li').length
 const nth = document.querySelector('.nth');
 let i = 1;
+let index = 1;
 noticeBanner.style.transform = `translate(-${noticeBannerImg.width}px)`;
-function right() {
+function next() {
+    index++;
     i++;
-    nth.innerText = i;
+    nth.innerText = index;
     noticeBanner.style.transform = `translate(-${i * noticeBannerImg.width}px)`;
-    if (i === 14) {
-        noticeBanner.style.transform = `translate(-${noticeBannerImg.width}px)`;
-        i = 1;
+    if (index === 14) {
+        index = 0;
+    }
+    if (i === 1) {
+        --index;
+        noticeBanner.classList.remove('on');
+        next()
+        noticeBanner.classList.add('on')
+    } else if (i === 15) {
+        i = 0;
     }
 }
-noticeBannerNext.addEventListener('click', right);
-noticeBannerPrev.addEventListener('click', function () {
+noticeBannerNext.addEventListener('click', next);
+noticeBannerPrev.addEventListener('click', function prev() {
+    if (index === 1) {
+        index = 15;
+    }
+    index --
     i--;
-    nth.innerText = i;
+    nth.innerText = index;
     noticeBanner.style.transform = `translate(-${i * noticeBannerImg.width}px)`;
-    if (i === -1) {
-        noticeBanner.style.transform = `translate(-${13 * noticeBannerImg.width}px)`;
-        i = 13;
+    if (i === 15) {
+        --index;
+        noticeBanner.classList.remove('on');
+        prev()
+        noticeBanner.classList.add('on')
+    } else if (i === 0) {
+        i = 15;
     }
 });
-const autoBanner = setInterval(right, 3000);
+const autoBanner = setInterval(next, 3000);
 autoBanner;
 noticeBannerStop.addEventListener('click', function () {
     clearInterval(autoBanner);
 });
 
+
 //~banner
-
-

@@ -13,7 +13,7 @@ header > .gnb .userSupport > .searchSup { width: 20px; height: 20px; background:
 header > .gnb .userSupport > .fullMenuSup { width: 19px; height: 16px; background: url(../images/ico-menu-white.png) no-repeat center /19px 16px; } 
 header h1.logo { margin: 0; } 
 main .noticeBanner { width: 43%; } 
-main .noticeBanner .boxViewport li { width: calc(100%/14); } 
+main .noticeBanner .boxViewport li { width: calc(100%/16); } 
 main .visitorMenu .moreMenu a { padding: 0 6px; } 
 main .visitorMenu .menuList ul { justify-content: space-between; padding: 0 10px; } 
 main .visitorMenu .menuList span { width: 70px; height: 70px; line-height: 70px; margin-bottom: 3px; } 

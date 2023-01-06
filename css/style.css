@@ -38,12 +38,12 @@ header > .servBar .userSet > ul { margin-right: 12px; }
 header > .servBar .userSet input { display: none; } 
 header > .servBar .userSet label { cursor: pointer; display: inline-block; } 
 header > .servBar .userSet label::after { content: "▼"; font-size: 0.6em; color: #434559; position: absolute; right: -13px; top: 4px; } 
-header > .servBar .userSet .languageMenu { display: none; top: 35px; right: -12px; min-width: 130px; z-index: 2; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; } 
+header > .servBar .userSet .languageMenu { display: none; top: 35px; right: -12px; min-width: 130px; z-index: 3; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; } 
 header > .servBar .userSet #languageToggle:checked ~ .languageMenu { display: block; } 
 header > .servBar .userSet #languageToggle:checked ~ label::after { content: "▲"; } 
 header > .servBar .userSet .languageMenu li { display: block; line-height: 33px; letter-spacing: -0.025em; color: #44465c; font-size: 15px; } 
 header > .servBar .userSet .languageMenu li:hover > a { color: #d7021b; text-decoration: underline; } 
-header > .servBar .userSet .siteMenu { display: none; top: 35px; right: -12px; min-width: 130px; z-index: 2; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; color: #44465c; width: 361px; height: 260px; padding: 19px; } 
+header > .servBar .userSet .siteMenu { display: none; top: 35px; right: -12px; min-width: 130px; z-index: 3; padding: 9px 19px; border: 1px solid #666779; border-radius: 10px; vertical-align: top; background-color: #fff; color: #44465c; width: 361px; height: 260px; padding: 19px; } 
 header > .servBar .userSet #siteToggle:checked ~ .siteMenu { display: block; } 
 header > .servBar .userSet #siteToggle:checked ~ label::after { content: "▲"; } 
 header > .servBar .userSet .siteMenu li { width: 106px; height: 120px; } 
@@ -102,7 +102,8 @@ main .searchWrap .formArea input { width: 100%; height: 60px; line-height: 54px;
 main .searchWrap .formArea button { width: 60px; height: 60px; top: 0; right: 0; border-radius: 25px; background: url(../images/ico-search.png) no-repeat center #ee0700; text-indent: -9999px; box-shadow: 0 7px 15px 0 #ffa590; cursor: pointer; } 
 main .noticeBanner { width: 410px; max-height: 118px;} 
 main .noticeBanner .boxViewport { width: 100%; overflow: hidden; max-height: 118px;} 
-main .noticeBanner .boxViewport ul{max-height: 118px; width: 1400%; transform: translateX(-410px); transition: transform .5s;} 
+main .noticeBanner .boxViewport ul{max-height: 118px; width: 1600%; transform: translateX(-410px);} 
+main .noticeBanner .boxViewport ul.on {transition: transform .5s;}
 main .noticeBanner .boxViewport li{float: left;} 
 main .noticeBanner .boxViewport li a {display: block;} 
 main .noticeBanner .boxViewport li img { width: 100%; } 
