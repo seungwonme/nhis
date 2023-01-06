@@ -255,6 +255,10 @@ main .promotionZone { width: 30%; height: 370px; background-color: #fff; border:
 main .promotionZone > p { font-size: 21px; color: #3a3a4a; margin-bottom: 19px; font-weight: 700; } 
 main .promotionZone > .nthBox { top: 37px; right: 42px; padding-right: 82px; } 
 main .promotionZone > .nthBox em { font-weight: 700; color: #3a3a4a; font-size: 16px; font-family: 'Noto Sans KR', sans-serif; } 
+main .promotionZone .boxWrap {overflow: hidden; max-width: 270px; width: 100%;}
+main .promotionZone .boxViewport {width: 500%; transform: translate(-270px);}
+main .promotionZone .boxViewport.on {transition: .5s;}
+main .promotionZone .boxViewport > a {float: left; display: block;}
 main .promotionZone .boxViewport img { width: 100%; height: 240px; } 
 main .promotionZone .boxControlDirection { top: 44px; right: 49px; } 
 main .promotionZone .boxLeft { display: inline-block; width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-l.png) no-repeat; margin-right: 41px; } 
