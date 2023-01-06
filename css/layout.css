@@ -1,0 +1,21 @@
+@import url(reset.css);
+@import url(style.css);
+@import url(../font/font.css);
+@import url(1180.css) not screen and (min-width: 1180px);
+@import url(991.css) not screen and (min-width: 991px);
+@import url(864.css) not screen and (min-width: 864px);
+@import url(767.css) not screen and (min-width: 767px);
+@import url(640.css) not screen and (min-width: 640px);
+@import url(530.css) not screen and (min-width: 530px);
+
+/* 
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font/font.css">
+<link rel="stylesheet" href="css/1180.css" media="screen and (max-width:1180px)">
+<link rel="stylesheet" href="css/991.css" media="screen and (max-width:991px)">
+<link rel="stylesheet" href="css/864.css" media="screen and (max-width:864px)">
+<link rel="stylesheet" href="css/767.css" media="screen and (max-width:767px)">
+<link rel="stylesheet" href="css/640.css" media="screen and (max-width:640px)">
+<link rel="stylesheet" href="css/530.css" media="screen and (max-width:530px)"> 
+*/

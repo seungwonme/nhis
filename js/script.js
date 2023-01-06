@@ -79,13 +79,46 @@ function prev() {
 noticeBannerNext.addEventListener('click', next);
 noticeBannerPrev.addEventListener('click', prev);
 
-const autoBanner = setInterval(next, 3000);
-
-autoBanner;
+const autoBanner = function () {
+    id = setInterval(function () {
+        if (index === 14) {
+            index = 0;
+        }
+        index++;
+        i++;
+        nth.innerText = index;
+        noticeBanner.style.transform = `translate(-${i * noticeBannerImg.width}px)`;
+        if (i === 1) {
+            --index;
+            noticeBanner.classList.remove('on');
+            next();
+            noticeBanner.classList.add('on');
+        } else if (i === 15) {
+            i = 0;
+        }
+    }, 3000);
+};
+autoBanner();
 
 noticeBannerStop.addEventListener('click', function () {
-    clearInterval(autoBanner);
+    if (noticeBannerStop.classList[1] === undefined) {
+        clearInterval(id);
+    } else {
+        autoBanner();
+    }
     noticeBannerStop.classList.toggle('off');
 });
 
-//~banner
+document.querySelector('.boxControlDirection').addEventListener('mouseenter', function () {
+    clearInterval(id);
+});
+document.querySelector('.boxControlDirection').addEventListener('mouseleave', function () {
+    autoBanner();
+});
+noticeBanner.addEventListener('mouseenter', function () {
+    clearInterval(id);
+});
+noticeBanner.addEventListener('mouseleave', function () {
+    autoBanner();
+});
+//~notice banner

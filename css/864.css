@@ -9,5 +9,5 @@ main .visitorMenu .menuList li { width: 20%; margin-top: 30px; }
 main .mainPolicy dt strong { font-size: 25px; } 
 main .eventBanner, main .promotionZone, main .divWrap > div { padding: 33px 25px 0; } 
 main .eventBanner > .nthBox, main .promotionZone > .nthBox { right: 25px; padding-right: 60px; } 
-main .eventBanner .boxControlDirection, main .promotionZone .boxControlDirection {right: 21px;}
-main .eventBanner .boxControlAuto, main .promotionZone .boxControlAuto {right: 45px;}
+main .eventBanner .boxControlDirection, main .promotionZone .boxControlDirection { right: 21px; } 
+main .eventBanner .boxControlAuto, main .promotionZone .boxControlAuto { right: 45px; } 
