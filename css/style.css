@@ -156,10 +156,11 @@ main .visitorMenu .menuList .n9th:hover { background-position: -80px -320px; }
 .mainBanner { margin-top: 70px; padding-bottom: 80px; } 
 .mainBanner .bannerControl { margin-bottom: 18px; } 
 .mainBanner .bannerControl > .nthBox em { font-weight: 700; color: #3a3a4a; font-size: 16px; font-family: 'Noto Sans KR', sans-serif; } 
+.mainBanner .boxControlAuto{top: 6px; left: 60px;}
 .mainBanner .boxWrap { width: 100%; height: 128px; background: url(../images/mainBanner.png) center /100% 100%; border-radius: 8px 55px 8px 8px; } 
 .mainBanner .boxWrap > .boxViewport { overflow: hidden; height: 107px; } 
 .mainBanner .boxWrap > .boxViewport ul {transform: translateY(-106px);}
-.mainBanner .boxWrap > .boxViewport ul.on {transition: .5s;}
+.mainBanner .boxWrap > .boxViewport ul.on {transition: transform .5s;}
 .mainBanner .boxWrap > .boxViewport ul { width: 100%; } 
 .mainBanner .boxWrap > .boxViewport li { width: 100%; height: 106px;} 
 .mainBanner .boxWrap > .boxViewport li > a { display: block; text-align: center; padding-top: 28px; } 
@@ -258,7 +259,7 @@ main .promotionZone > .nthBox { top: 37px; right: 42px; padding-right: 82px; }
 main .promotionZone > .nthBox em { font-weight: 700; color: #3a3a4a; font-size: 16px; font-family: 'Noto Sans KR', sans-serif; } 
 main .promotionZone .boxWrap {overflow: hidden; max-width: 270px; width: 100%;}
 main .promotionZone .boxViewport {width: 500%; transform: translate(-270px);}
-main .promotionZone .boxViewport.on {transition: .5s;}
+main .promotionZone .boxViewport.on {transition: transform .5s}
 main .promotionZone .boxViewport > a {float: left; display: block;}
 main .promotionZone .boxViewport img { width: 100%; height: 240px; } 
 main .promotionZone .boxControlDirection { top: 44px; right: 49px; } 

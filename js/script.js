@@ -170,8 +170,8 @@ function prev1() {
         k = 4;
     }
 }
-mainBannerNext.addEventListener('click', next1);
-mainBannerPrev.addEventListener('click', prev1);
+mainBannerNext.addEventListener('click', prev1);
+mainBannerPrev.addEventListener('click', next1);
 
 const autoBanner1 = function () {
     id1 = setInterval(function () {
@@ -185,14 +185,25 @@ const autoBanner1 = function () {
         if (k === 1) {
             --index1;
             mainBanner.classList.remove('on');
-            next2();
-            mainBanner.classList.add('on');
-        } else if (k === 4) {
+            next1();
+            mainBanner.classList.add('on'); 
+        }
+        if (k === 4) {
             k = 0;
         }
-    }, 5000);
+        console.log(k);
+    }, 2000);
 };
 autoBanner1();
+
+mainBannerStop.addEventListener('click', function () {
+    if (mainBannerStop.classList[1] === undefined) {
+        clearInterval(id1);
+    } else {
+        autoBanner1();
+    }
+    mainBannerStop.classList.toggle('off');
+});
 
 document.querySelector('.mainBanner .boxNext').addEventListener('mouseenter', function () {
     clearInterval(id1);
@@ -206,12 +217,6 @@ document.querySelector('.mainBanner .boxPrev').addEventListener('mouseenter', fu
 document.querySelector('.mainBanner .boxPrev').addEventListener('mouseleave', function () {
     autoBanner1();
 });
-mainBanner.addEventListener('mouseenter', function () {
-    clearInterval(id1);
-});
-mainBanner.addEventListener('mouseleave', function () {
-    autoBanner1();
-}); 
 // ~ main banner
 
 const promotionBanner = document.querySelector('.promotionZone .boxViewport');
