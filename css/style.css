@@ -113,6 +113,7 @@ main .noticeBanner .boxControlDirection .boxLeft { width: 7px; height: 12px; tex
 main .noticeBanner .boxControlDirection .boxRight { width: 7px; height: 12px; text-indent: -9999px; background: url(../images/arrow-banner-r.png) no-repeat; } 
 main .noticeBanner .boxControlAuto { bottom: -14px; left: 117px; } 
 main .boxControlAuto .boxStop { width: 10px; height: 12px; text-indent: -9999px; display: block; background: url(../images/slide-pause.png) no-repeat; } 
+main .boxControlAuto .boxStop.off {background: url(../images/slide-play.png) no-repeat; }
 main .noticeBanner > .nthBox { bottom: -20px; left: 0; } 
 main .noticeBanner > .nthBox em { font-weight: 700; color: #3a3a4a; font-size: 16px; font-family: 'Noto Sans KR', sans-serif; } 
 main .noticeBanner > .nthBox img { margin: 0 0 3px 10px; } 
