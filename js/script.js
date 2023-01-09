@@ -144,8 +144,11 @@ function next1() {
     k++;
     nth1.innerText = index1;
     mainBanner.style.transform = `translateY(-${k * 106}px)`;
+    if(k === 2){
+        mainBanner.classList.add('on');
+    }
     if (k === 1) {
-        --index1;
+        index1--;
         mainBanner.classList.remove('on');
         next1();
         mainBanner.classList.add('on');
@@ -183,16 +186,14 @@ const autoBanner1 = function () {
         nth1.innerText = index1;
         mainBanner.style.transform = `translateY(-${k * 106}px)`;
         if (k === 1) {
-            --index1;
-            mainBanner.classList.remove('on');
+            index1--;
+            mainBanner.classList.remove('on'); 
             next1();
-            mainBanner.classList.add('on'); 
-        }
-        if (k === 4) {
+            // mainBanner.classList.add('on'); 
+        } else if (k === 4) {
             k = 0;
         }
-        console.log(k);
-    }, 2000);
+    }, 10000);
 };
 autoBanner1();
 
@@ -238,11 +239,11 @@ function next2() {
     promotionBanner.style.transform = `translate(-${j * promotionBannerImg.width}px)`;
     if (j === 1) {
         --index2;
-        promotionBanner.classList.remove('on');
         next2();
         promotionBanner.classList.add('on');
     } else if (j === 4) {
         j = 0;
+        mainBanner.classList.remove('on');
     }
 }
 function prev2() {
